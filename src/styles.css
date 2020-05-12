@@ -14,7 +14,8 @@ em {
 
 h1 {
   font-family:"cheddar jack";
-  font-size: 4.5em;
+  font-size: 60px;
+  letter-spacing: 5px;
   color: #764abc;
 }
 
@@ -82,21 +83,22 @@ hr {
 }
 
 .pagination {
-  display: -ms-inline-flexbox;
+  display: inline-flex;
   justify-content: center;
   align-self: baseline;
 }
 
 .pagination a {
   color: #764abc;
-  float: left;
+  text-align: left;
+  justify-self: start;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color .3s;
 }
 
 .pagination a.active {
-  background-color: #a8efa8;
+  background-color: #bbe5f9;
   color: white;
 }
 

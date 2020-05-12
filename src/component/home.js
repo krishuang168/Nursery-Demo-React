@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Button, Col, Row } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles.css';
-import Header from './header';
-import Footer from './footer';
+import Header from './Header';
+import Footer from './Footer';
 import sideDeco from '../shared/sideDeco.svg';
 
 
