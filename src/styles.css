@@ -71,14 +71,14 @@ hr {
 
 .block {
   display: block;
-  width: 38em;
-  height: 400px;
+  max-width: 1000px;
   align-items: center;
   justify-content: center;
-  background-color: #a07dd8;
+  background-color: rgba(160, 125, 216, 0.1);
   border: 15px;
   border-color: #764abc;
   border-radius: 5px; 
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 

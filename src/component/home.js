@@ -15,11 +15,7 @@ class Home extends Component {
                 <div className="main">
                 <img src={sideDeco} className="my-auto" id="side-deco"/>
                     <div className="block mx-auto">
-                        <Row>
-                            <Col>
-                            <Button outline className="btn-lg btn-home">Carousel</Button>
-                            </Col>
-                        </Row>
+                        <iframe width="1000rem" height="600em" src="https://www.youtube.com/embed/w77zPAtVTuI" frameborder="0" autoplay allow="accelerometer; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <Footer />
