@@ -1,6 +1,7 @@
 /* Color-dark: #764abc */
 /* Color-medium: #a07dd8 */
 /* Color-light: #c3a0e5 */
+/* Light-blue: #bbe5f9 */
 /* Light-green: #d1ffd8 */
 
 em {
@@ -112,13 +113,12 @@ hr {
   text-decoration: none;
 }
 
-.main {
+/* .main {
   background: src(#side-deco);
-}
+} */
 
 #side-deco {
   position: absolute;
-  position-y: 12rem;
   width: 20em;
   height: 30em;
   display: flex;
