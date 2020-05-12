@@ -1,27 +1,43 @@
-/* Color-Dark: #764abc*/
+/* Color-dark: #764abc */
+/* Color-medium: #a07dd8 */
+/* Color-light: #c3a0e5 */
+/* Light-green: #d1ffd8 */
+
+em {
+  font-family:"gisella", cursive;
+  font-size: 2.1em;
+  color: inherit;
+  word-spacing: .08em;
+  letter-spacing: .1em;
+}
+
+h1 {
+  font-family:"cheddar jack";
+  font-size: 4.5em;
+  color: #764abc;
+}
+
+h2 {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+}
+
+hr {
+  background-color: #764abc
+}
 
 @font-face {
   font-family: 'Cheddar Jack';
-  src: local('cheddar jack'), url(../src/shared/cheddar\ jack.ttf) format('ttf');
+  src: local('cheddar jack'), url(./shared/cheddar\ jack.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'Gisella Demo';
-  src: local('gisella'), url(../src/shared/Gisella\ Demo.otf) format('otf');
+  src: local('gisella'), url(./shared/Gisella\ Demo.otf) format('otf');
 }
 
-.center {
-  text-align: center;
-}
-
-.text-white {
-  color: white;
-}
-
-.btn-home {
-  color: white;
-  border-color: white;
-  border-radius: 0px;
+.banner {
+  text-align: left;
 }
 
 .botton-text {
@@ -30,32 +46,89 @@
   border-color: white;
 }
 
-em {
-  font-family:"gisella", cursive;
-  font-size: 2em;
-  color: inherit;
-  word-spacing: .1em;
-  letter-spacing: .02em
+.btn-home {
+  color: white;
+  border-color: white;
+  border-radius: 0px;
 }
 
-h1 {
-  font-family:"cheddar jack";
-  font-size: 5em;
-  color: #764abc;
+.logo-big {
+  width: 11.7em;
+  float: left;
+  border-radius: 2.5em;
 }
 
-h2 {
-  font-size: 16px;
+.navbar {
+  text-align: right;
+  justify-content: right;
+}
+
+.text-white {
+  color: white;
 }
 
 .block {
-  width: 600px;
+  display: block;
+  width: 38em;
   height: 400px;
+  align-items: center;
+  justify-content: center;
   background-color: #a07dd8;
   border: 15px;
   border-color: #764abc;
   border-radius: 5px; 
+  margin-bottom: 2em;
 }
+
+.pagination {
+  display: -ms-inline-flexbox;
+  justify-content: center;
+  align-self: baseline;
+}
+
+.pagination a {
+  color: #764abc;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #a8efa8;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #d1ffd8;}
+
+.site-footer {
+  color: white;
+  background-color: #a79060; 
+  background-image: linear-gradient(#a79060, #5c3f3f, black);
+}
+
+.site-footer a {
+  color: #c3a0e5;
+  text-decoration: none;
+}
+
+.main {
+  background: src(#side-deco);
+}
+
+#side-deco {
+  position: absolute;
+  position-y: 12rem;
+  width: 20em;
+  height: 30em;
+  display: flex;
+  float: left;
+  align-self: flex-end;
+  
+}
+
+
+
 
 /* .App-logo {
   height: 40vmin;
