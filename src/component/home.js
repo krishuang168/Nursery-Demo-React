@@ -12,9 +12,9 @@ class Home extends Component {
             <React.Fragment>
                 <Header />
                 <div className="main">
-                <img src={sideDeco} id="sideDeco"/>
+                <img src={sideDeco} id="sideDeco" className="growth"/>
                     <div className="block mx-auto">
-                        <iframe width="1000rem" height="500em" src="https://www.youtube.com/embed/w77zPAtVTuI?&autoplay=1&mute=1" frameborder="0" autoplay allow="accelerometer; autoplay; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/w77zPAtVTuI?&autoplay=1&mute=1" frameBorder="0" autoPlay allow="accelerometer; autoplay; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
                 <Footer />

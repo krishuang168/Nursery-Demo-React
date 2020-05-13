@@ -1,8 +1,8 @@
 import React from 'react';
-import 'react-fontawesome';
 import { Col, Row } from 'reactstrap';
-import { Link, NavLink } from 'react-router-dom';
-import logo from '../shared/logo.svg';
+import { NavLink } from 'react-router-dom';
+import logo from '../shared/svg/logo.svg';
+import shoppingBasket from '../shared/svg/shoppingBasket.svg';
 
 
 function Header() {
@@ -14,13 +14,13 @@ function Header() {
                 </Col>
                 <Col>
                     <Row>
-                        <Col xs={10} sm={7} md={6}><h1 className="banner">Cottage Lake Seeds</h1></Col>
+                        <Col xs={10} sm={7} md={5}><h1 className="banner">Cottage Lake Seeds</h1></Col>
                         <Col className="navbar mr-5">
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/about_us">About Us</NavLink>
                             <NavLink to="/contact_us">Contact Us</NavLink>
                             <NavLink to="/purchase">Online Purchase</NavLink>
-                            <NavLink to="/shopping_cart"><i className="fa fa-shopping-cart" /></NavLink>
+                            <NavLink to="/shopping_cart"><img src={shoppingBasket} alt="Shopping Basket"/></NavLink>
                         </Col>
                     </Row>
                     <Row>

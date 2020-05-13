@@ -5,14 +5,21 @@
 /* Light-green: #d1ffd8 */
 
 em {
-  font-family:"gisella", cursive;
-  font-size: 2.1em;
+  position: relative;
+  left: 0.1rem;
+  bottom: 0.15rem;
+  font-family:"gisella";
+  font-size: 1.5rem;
   color: inherit;
-  word-spacing: .08em;
-  letter-spacing: .1em;
+  word-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  margin: 0.2rem;
 }
 
 h1 {
+  position: relative;
+  left: 2rem;
+  top: 0.1em;
   font-family:"cheddar jack";
   font-size: 60px;
   letter-spacing: 5px;
@@ -20,12 +27,20 @@ h1 {
 }
 
 h2 {
-  font-size: 14px;
+  position: relative;
+  left: 3.5rem;
+  top: 0.1rem;
+  font-size: 0.2em;
   letter-spacing: 0.2em;
 }
 
 hr {
   background-color: #764abc
+}
+
+iframe {
+  width: 60rem;
+  height: 35rem;
 }
 
 @font-face {
@@ -66,7 +81,7 @@ hr {
 
 .block {
   display: block;
-  max-width: 1000px;
+  max-width: 60em;
   align-items: center;
   justify-content: center;
   background-color: rgba(160, 125, 216, 0.1);
@@ -77,9 +92,9 @@ hr {
 
 .navbar {
   display: inline-flex;
-  justify-content: center;
+  justify-content: left;
   align-self: baseline;
-  text-align: right;
+  text-align: left;
 }
 
 .navbar a {
@@ -111,15 +126,31 @@ hr {
 
 #sideDeco {
   position: absolute;
-  width: 25rem;
-  height: 35rem;
+  left: -0.8em;
+  top: 9em;
+  width: 60%;
+  height: 30%;
   display: flex;
   float: left;
   align-self: flex-start;
 }
 
-/* 
+.growth {
+  flex: 1; /*grow*/
+  animation: growing ease-in-out backwards;
+  animation-duration: 1.5s;
+}
 
+@keyframes growing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;

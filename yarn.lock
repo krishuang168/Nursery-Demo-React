@@ -1096,6 +1096,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify/icons-fa@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-fa/-/icons-fa-1.0.3.tgz#efba49f13da4e6b2f8be6323f2a367bbfe34fbdd"
+  integrity sha512-MImPEf6Z87DlbaPg4eKuvSBwod4brbc/kWX0UKE7RZGd7KbzL6q3c+Raj1lP2D8+dn4j0XAUET5y7FbSRv7KCQ==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
