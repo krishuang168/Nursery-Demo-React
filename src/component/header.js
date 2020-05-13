@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../shared/svg/logo.svg';
 import shoppingBasket from '../shared/svg/shoppingBasket.svg';
 
@@ -10,7 +10,7 @@ function Header() {
         <React.Fragment>
             <Row>
                 <Col xs={7} sm={4} md={2}>
-                    <a href="/home"><img src={logo} alt="Logo" className="logo-big"/></a>
+                    <Link to="/home"><img src={logo} alt="Logo" className="logo-big"/></Link>
                 </Col>
                 <Col>
                     <Row>
@@ -21,6 +21,7 @@ function Header() {
                             <NavLink to="/contact_us">Contact Us</NavLink>
                             <NavLink to="/purchase">Online Purchase</NavLink>
                             <NavLink to="/shopping_cart"><img src={shoppingBasket} alt="Shopping Basket"/></NavLink>
+                            <NavLink to="/covid-19" id="covid-19">COVID-19</NavLink>
                         </Col>
                     </Row>
                     <Row>

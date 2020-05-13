@@ -4,6 +4,16 @@
 /* Light-blue: #bbe5f9 */
 /* Light-green: #d1ffd8 */
 
+@font-face {
+  font-family: 'Cheddar Jack';
+  src: local('cheddar jack'), url(../shared/cheddar\ jack.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Gisella Demo';
+  src: local('gisella'), url(../shared/Gisella\ Demo.otf) format('otf');
+}
+
 em {
   position: relative;
   left: 0.1rem;
@@ -34,6 +44,14 @@ h2 {
   letter-spacing: 0.2em;
 }
 
+h3 {
+  position: relative;
+  left: 0.5rem;
+  top: 0.1rem;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+
 hr {
   background-color: #764abc
 }
@@ -43,24 +61,22 @@ iframe {
   height: 35rem;
 }
 
-@font-face {
-  font-family: 'Cheddar Jack';
-  src: local('cheddar jack'), url(../shared/cheddar\ jack.ttf) format('ttf');
-}
-
-@font-face {
-  font-family: 'Gisella Demo';
-  src: local('gisella'), url(../shared/Gisella\ Demo.otf) format('otf');
+.text-dark {
+  color: #764abc;
 }
 
 .banner {
   text-align: left;
 }
 
-.botton-text {
-  font-size: 60px;
-  border: 8px;
-  border-color: white;
+.btn-primary {
+  background-color: #764abc;
+  border-color: #764abc;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background-color: #a07dd8;
+  border-color: #a07dd8;
 }
 
 .btn-home {
@@ -75,9 +91,11 @@ iframe {
   border-radius: 2.5em;
 }
 
-/* .text-white {
-  color: white;
-} */
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 100px; 
+}
 
 .block {
   display: block;
@@ -148,6 +166,16 @@ iframe {
   100% {
     width: 60%;
   }
+}
+
+#covid-19 {
+  color: red;
+}
+
+#coronavirus {
+  width: 20rem;
+  padding: 3rem;
+  margin: 9rem;
 }
 
 /* 
