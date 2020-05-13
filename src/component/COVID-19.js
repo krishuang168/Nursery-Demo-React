@@ -1,25 +1,31 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import sideDeco from '../shared/sideDeco.svg';
 
 function Covid19Announcement(props) {
     return( 
         <React.Fragment>
-        
-
         <div className="container">
+            <div className="row row-content"></div>
             <Row>
-                <Col xs={2}><img src={'https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg'} id="coronavirus" /></Col>
                 <Col>
                     <Row><Col><strong>COVID-19 Update</strong></Col></Row>
                     <Row><Col>May 1, 2020</Col></Row>
                     <hr />
                     <Row>
                         <Col>
-                            <p>We currently only provide curb-side pickup service. </p>
-                            <p>Online purchase is available 24-7. </p>
+                            <p><Link to="/catalog">Online purchase</Link> is available 24/7. </p>
+                            <p>We currently only provide <strong>curbside</strong> pickup service. <br />
+                            No in-store shopping is allowed per Governor's Stay-at-home order. </p>
+                            <img id="coronavirus" src={'https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg'} />          
                         </Col>
                     </Row>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    {/* <img id="coronavirus" src={'https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg'} /> */}
                 </Col>
             </Row>
         </div>

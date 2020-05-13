@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Home from './Home';
 import Header from './Header';
-import Purchase from './Purchase';
+import Catalog from './Catalog';
 import ShoppingBasket from './ShoppingBasket';
 import Footer from './Footer';
 import About from './About';
@@ -45,7 +45,8 @@ class Main extends Component {
                     <Route path='/home' component={HomePage} />
                     {/* <Route exact path='/directory' render={ () => <Directory campsites={this.props.campsites} />} />
                     <Route path='/directory/:campsiteId' component={CampsiteWithId} /> */}
-                    
+                    <Route exact path='/catalog' component={Catalog} />
+
                     {/* <Route exact path='/about_us' render={ () => <About partners={this.props.partners} />} /> */}
                     <Route exact path='/about_us' component={About} />
                     <Route exact path='/contact_us' component={Contact} />

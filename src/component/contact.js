@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from 'reactstrap';
+import { Button, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 
@@ -41,8 +41,8 @@ class Contact extends Component {
 
         return (
             <div className="container">
-                <div className="row"></div>
-                <div className="row row-content align-items-center">
+                <div className="row row-content"></div>
+                <div className="row align-items-center">
                     <div className="col-sm-4">
                         <h5>Our Address</h5>
                         <address>
@@ -52,10 +52,15 @@ class Contact extends Component {
                         </address>
                     </div>
                     <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone"></i> +1-(425)-426-8778</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> contact@cottagelakeseeds.com</a>
+                        <a role="button" href="tel:+12065551234"><i className="fa fa-phone"></i> +1-(425)-426-8778</a><br />
+                        <a role="button" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> contact@cottagelakeseeds.com</a>
                     </div>
                 </div>
+                    <Row>
+                        <Col>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1341.1191542363226!2d-122.0897353419166!3d47.75743179797058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDQ1JzI2LjgiTiAxMjLCsDA1JzE5LjEiVw!5e0!3m2!1szh-TW!2sus!4v1589362418979!5m2!1szh-TW!2sus" width="300px" height="200px" frameBorder="0"  allowFullScreen="" tabIndex="0"></iframe>
+                        </Col>
+                    </Row>
             
                 {/* React Redux Form */}
                 <div className="row row-content">

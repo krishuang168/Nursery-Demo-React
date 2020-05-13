@@ -11,18 +11,26 @@
 
 @font-face {
   font-family: 'Gisella Demo';
-  src: local('gisella'), url(../shared/Gisella\ Demo.otf) format('otf');
+  src: local('gisella'), url(../shared/Gisella\ Demo.ttf) format('otf');
+}
+
+a {
+  color: #764abc;
+}
+
+a:hover {
+  color: #c3a0e5;
 }
 
 em {
   position: relative;
   left: 0.1rem;
   bottom: 0.15rem;
-  font-family:"gisella";
+  font-family:"cheddar jack";
   font-size: 1.5rem;
   color: inherit;
   word-spacing: 0.1em;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   margin: 0.2rem;
 }
 
@@ -30,7 +38,7 @@ h1 {
   position: relative;
   left: 2rem;
   top: 0.1em;
-  font-family:"cheddar jack";
+  font-family:"gisella";
   font-size: 60px;
   letter-spacing: 5px;
   color: #764abc;
@@ -92,9 +100,8 @@ iframe {
 }
 
 .row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 100px; 
+  padding: 1rem 0;
+  min-height: 70px; 
 }
 
 .block {
@@ -173,9 +180,8 @@ iframe {
 }
 
 #coronavirus {
-  width: 20rem;
-  padding: 3rem;
-  margin: 9rem;
+  width: 40rem;
+  margin-bottom: 2rem;
 }
 
 /* 
