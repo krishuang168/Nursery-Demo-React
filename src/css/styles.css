@@ -93,6 +93,11 @@ iframe {
   border-radius: 0px;
 }
 
+.all-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .logo-big {
   width: 11.7em;
   float: left;
