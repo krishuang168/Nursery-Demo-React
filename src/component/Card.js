@@ -1,7 +1,5 @@
 import React from 'react';
-import { Card, CardHeader, CardTitle, CardBody, CardImg, CardText} from 'reactstrap';
-import styles from '../css/styles.css';
-
+import { Card, CardHeader,  CardBody, CardImg, CardText} from 'reactstrap';
 
 export const RenderCard = (props) => {
     return (

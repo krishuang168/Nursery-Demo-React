@@ -1,9 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import sideDeco from '../shared/sideDeco.svg';
 
-function Covid19Announcement(props) {
+function Covid19Announcement() {
     return( 
         <React.Fragment>
         <div className="container">
@@ -18,7 +17,7 @@ function Covid19Announcement(props) {
                             <p><Link to="/catalog">Online purchase</Link> is available 24/7. </p>
                             <p>We currently only provide <strong>curbside</strong> pickup service. <br />
                             No in-store shopping is allowed per Governor's Stay-at-home order. </p>
-                            <img id="coronavirus" src={'https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg'} />          
+                            <img id="coronavirus" alt="Coronavirus" src={'https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg'} />          
                         </Col>
                     </Row>
                 </Col>
