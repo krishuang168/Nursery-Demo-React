@@ -95,24 +95,26 @@ iframe {
   border-color: #a07dd8;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.block {
-  display: block;
-  max-width: 60em;
+.main {
+  display: float;
+  max-width: 100 rem;
   align-items: center;
   justify-content: center;
-  background-color: rgba(160, 125, 216, 0.1);
+  background-color: rgba(160, 125, 216, 0.3);
   border-radius: 5px; 
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .center {
   text-align: center;
   vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-big {
@@ -173,6 +175,15 @@ iframe {
 
 .text-dark {
   color: #764abc;
+}
+
+.video {
+  display: float;
+  max-width: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #sideDeco {
