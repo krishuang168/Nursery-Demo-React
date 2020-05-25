@@ -69,10 +69,6 @@ iframe {
   height: 35rem;
 }
 
-.text-dark {
-  color: #764abc;
-}
-
 .banner {
   text-align: left;
 }
@@ -83,6 +79,7 @@ iframe {
 }
 
 .btn-primary:focus, .btn-primary:hover {
+  color: inherit;
   background-color: #a07dd8;
   border-color: #a07dd8;
 }
@@ -93,7 +90,12 @@ iframe {
   border-radius: 0px;
 }
 
-.all-center {
+.btn-light {
+  background-color: #a07dd8;
+  border-color: #a07dd8;
+}
+
+.center {
   text-align: center;
   vertical-align: middle;
 }
@@ -107,6 +109,10 @@ iframe {
 .row-content {
   padding: 1rem 0;
   min-height: 70px; 
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .block {
@@ -143,6 +149,17 @@ iframe {
 
 .navbar a:hover:not(.active) {background-color: #d1ffd8;}
 
+.right {
+  float: right;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.shopping th {
+  color: white;
+  background-color: #764abc;
+}
+
 .site-footer {
   color: white;
   background-color: #a79060; 
@@ -152,6 +169,10 @@ iframe {
 .site-footer a {
   color: #c3a0e5;
   text-decoration: none;
+}
+
+.text-dark {
+  color: #764abc;
 }
 
 #sideDeco {

@@ -41,6 +41,7 @@ class Main extends Component {
         return (
             <div>
                 <Header />
+                {/* Subpages */}
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     {/* <Route exact path='/directory' render={ () => <Directory campsites={this.props.campsites} />} />
@@ -50,6 +51,7 @@ class Main extends Component {
                     {/* <Route exact path='/about_us' render={ () => <About partners={this.props.partners} />} /> */}
                     <Route exact path='/about_us' component={About} />
                     <Route exact path='/contact_us' component={Contact} />
+                    <Route exact path='/shopping_basket' component={ShoppingBasket} />
                     <Route exact path='/covid-19' component={Covid19Announcement} />
                     <Redirect to='/home' />
                 </Switch>
