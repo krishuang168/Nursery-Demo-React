@@ -20,7 +20,7 @@ function Header() {
                             <NavLink to="/about_us">About Us</NavLink>
                             <NavLink to="/contact_us">Contact Us</NavLink>
                             <NavLink to="/catalog">Online Purchase</NavLink>
-                            <NavLink to="/shopping_basket"><img src={shoppingBasket} alt="Shopping Basket"/></NavLink>
+                            <NavLink to="/shopping_basket"><img src={shoppingBasket} title="Shopping Basket" alt="Shopping Basket" width="25" /></NavLink>
                             <NavLink to="/covid-19" id="covid-19">COVID-19</NavLink>
                         </Col>
                     </Row>

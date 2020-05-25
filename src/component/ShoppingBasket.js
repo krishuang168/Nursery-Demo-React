@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col, Table } from 'reactstrap';
 import { SmallCard } from './Card';
+import shoppingBasket from '../shared/svg/shoppingBasket.svg';
+
 
 class ShoppingBasket extends Component {
     constructor(props) {
@@ -49,7 +51,7 @@ class ShoppingBasket extends Component {
         return (
             <div className="container">
                 <div className="row row-content"></div>
-                    <Col><strong>Your Shopping Basket</strong></Col>
+                    <Col><strong>Your Shopping Basket<img src={shoppingBasket} width="25" className="ml-3"/></strong></Col>
                     <hr />
                 <Table>
                     <thead className="shopping">

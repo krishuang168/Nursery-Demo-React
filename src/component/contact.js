@@ -57,7 +57,7 @@ class Contact extends Component {
                 </div>
                     <Row>
                         <Col>
-                            <iframe title="Our Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1341.1191542363226!2d-122.0897353419166!3d47.75743179797058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDQ1JzI2LjgiTiAxMjLCsDA1JzE5LjEiVw!5e0!3m2!1szh-TW!2sus!4v1589362418979!5m2!1szh-TW!2sus" width="300px" height="200px" frameBorder="0"  allowFullScreen="" tabIndex="0"></iframe>
+                            <iframe title="Our Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1341.1191542363226!2d-122.0897353419166!3d47.75743179797058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDQ1JzI2LjgiTiAxMjLCsDA1JzE5LjEiVw!5e0!3m2!1szh-TW!2sus!4v1589362418979!5m2!1szh-TW!2sus" width="200px" height="200px" frameBorder="0"  allowFullScreen="" tabIndex="0"></iframe>
                         </Col>
                     </Row>
             

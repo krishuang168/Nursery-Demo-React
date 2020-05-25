@@ -17,7 +17,7 @@ class About extends Component {
                         <Col>
                             <p>Inspired by our business partner, <a href="https://www.nucamp.co" target="_blank" rel="noopener noreferrer"><strong>Nucamp</strong></a>, we started our business in early March of 2020.</p>
                             <p>Our current focus is to provide quality seeds and seedings of numerous varieties, including flowers, vegetables, and herbaceous plants</p>
-                            <p>Please check <Link to="purchase">our catalog</Link>.</p>
+                            <p>Please check <Link to="/catalog">our catalog</Link>.</p>
                         </Col>
                     </Row>
                 </Col>
