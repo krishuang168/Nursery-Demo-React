@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #c3a0e5;
+  color: inherit;
 }
 
 em {
@@ -95,22 +95,6 @@ iframe {
   border-color: #a07dd8;
 }
 
-.center {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.logo-big {
-  width: 11.7em;
-  float: left;
-  border-radius: 2.5em;
-}
-
-.row-content {
-  padding: 1rem 0;
-  min-height: 70px; 
-}
-
 .bold {
   font-weight: bold;
 }
@@ -124,6 +108,17 @@ iframe {
   border-radius: 5px; 
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo-big {
+  width: 11.7em;
+  float: left;
+  border-radius: 2.5em;
 }
 
 .navbar {
@@ -153,6 +148,11 @@ iframe {
   float: right;
   text-align: right;
   vertical-align: middle;
+}
+
+.row-content {
+  padding: 1rem 0;
+  min-height: 70px; 
 }
 
 .shopping th {
@@ -186,6 +186,7 @@ iframe {
   align-self: flex-start;
 }
 
+/* Animation */
 .growth {
   flex: 1; /*grow*/
   animation: growing ease-in-out backwards;
@@ -200,6 +201,7 @@ iframe {
     width: 60%;
   }
 }
+/* End of Animation */
 
 #covid-19 {
   color: red;

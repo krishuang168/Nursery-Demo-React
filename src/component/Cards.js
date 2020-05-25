@@ -1,28 +1,31 @@
 import React from 'react';
-import { Card, CardHeader,  CardBody, CardImg, CardText} from 'reactstrap';
+import { Card, CardHeader,  CardBody, CardImg, CardText, Row, Col} from 'reactstrap';
 
 export const BigCard = ({name, image, text}) => {
     return (
-        <Card>
+        <Card sm={2} md={3}>
             <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}}
                 ><strong>{name}</strong>
             </CardHeader>
             <CardBody>
-                <CardImg src={image} width="3em" />
+                <CardImg src={image} width="3rem" />
                 <CardText>{text}</CardText>
             </CardBody>
         </Card>
     );
 }
 
-export const SmallCard = ({name, image}) => {
+export const SmallCard = ({name, image, text}) => {
     return (
         <Card>
-            <CardHeader style={{backgroundColor: '#c3a0e5', fontSize: '12px', textAlign: 'center'}}
+            <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}}
                 ><strong>{name}</strong>
             </CardHeader>
             <CardBody>
-                <img src={image} width="100" />
+                <Row>
+                    <Col><img src={image} alt={name} width="100" /></Col>
+                    <Col className="center">{text}</Col>
+                </Row>
             </CardBody>
         </Card>
     );
