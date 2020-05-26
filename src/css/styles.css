@@ -157,6 +157,12 @@ iframe {
   min-height: 70px; 
 }
 
+.shopping {
+  object-fit: cover;
+  width: 300px;
+  height: 350px;
+}
+
 .shopping th {
   color: white;
   background-color: #764abc;

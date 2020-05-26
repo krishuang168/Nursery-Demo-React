@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col} from 'reactstrap';
-import { BigCard } from './Cards';
+import { ShoppingCard } from './Cards';
 
-const RenderPlant = ({plantsData}) => {
+const PlantCard = ({plantsData}) => {
     const plants = plantsData.map(item => 
-        <Col><BigCard name={item.name} image={item.image} /></Col>
+        <Col sm={3} md={4}><ShoppingCard name={item.name} image={item.image} className="shopping" /></Col>
         );
 
     return (
@@ -19,4 +19,4 @@ const RenderPlant = ({plantsData}) => {
     );
 }
 
-export default RenderPlant;
+export default PlantCard;

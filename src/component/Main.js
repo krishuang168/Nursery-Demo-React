@@ -50,6 +50,8 @@ class Main extends Component {
                     {/* <Route exact path='/directory' render={ () => <Directory campsites={this.props.campsites} />} />
                     <Route path='/directory/:campsiteId' component={CampsiteWithId} /> */}
                     <Route exact path='/catalog' component={Catalog} />
+                    
+                    {/* Separate Plant Categories */}
                     <Route exact path='/flowers' component={Flowers} />
                     <Route exact path='/veggies' component={Veggies} />
                     <Route exact path='/herbs' component={Herbs} />

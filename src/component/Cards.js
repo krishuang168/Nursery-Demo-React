@@ -30,3 +30,17 @@ export const SmallCard = ({name, image, text}) => {
         </Card>
     );
 }
+
+export const ShoppingCard = ({name, image, text}) => {
+    return (
+        <Card sm={2} md={3}>
+            <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}}
+                ><strong>{name}</strong>
+            </CardHeader>
+            <CardBody>
+                <CardImg src={image} className="shopping" />
+                <CardText>{text}</CardText>
+            </CardBody>
+        </Card>
+    );
+}
