@@ -5,7 +5,12 @@ import { ShoppingCard } from './Cards';
 const PlantCard = ({plantsData}) => {
     const plants = plantsData.map(item => 
         <Col sm={3} md={4}>
-            <ShoppingCard name={item.name} image={item.image} className="shopping" />
+            <ShoppingCard className="shopping"
+                name={item.name} 
+                image={item.image} 
+                text={item.botanical}
+                price={item.price}
+            />
         </Col>
         );
 

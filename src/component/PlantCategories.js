@@ -3,7 +3,7 @@ import { FLOWERS } from '../shared/data/flowers';
 import { VEGGIES } from '../shared/data/veggies';
 import { HERBS } from '../shared/data/herbs';
 import { TREES } from '../shared/data/trees';
-import PlantCard from './PlantCard';
+import PlantCard from './PlantCards';
 
 // Display all plants in a specific category
 export const Flowers = () => {
