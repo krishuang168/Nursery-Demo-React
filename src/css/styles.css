@@ -1,6 +1,7 @@
 /* Color-dark: #764abc */
 /* Color-medium: #a07dd8 */
 /* Color-light: #c3a0e5 */
+/* Color-lighter: #e5cbf8 */
 /* Light-blue: #bbe5f9 */
 /* Light-green: #d1ffd8 */
 
@@ -53,10 +54,15 @@ h2 {
 }
 
 h3 {
+  font-family: "cheddar jack";
+  color: #764abc;
+  background-color: #e5cbf8;
+  font-size: 3em;
   position: relative;
-  left: 0.5rem;
-  top: 0.1rem;
-  font-size: 2em;
+  top: 2rem;
+  padding-left: 1em;
+  margin-top: .5rem;
+  margin-bottom: 0rem;
   letter-spacing: 0.2em;
 }
 
@@ -93,6 +99,11 @@ iframe {
 .btn-light {
   background-color: #a07dd8;
   border-color: #a07dd8;
+}
+
+.card-header {
+  display: block;
+  font-size: 0.9rem;
 }
 
 .main {
@@ -159,8 +170,8 @@ iframe {
 
 .shopping {
   object-fit: cover;
-  width: 300px;
-  height: 350px;
+  width: 8rem;
+  height: 8rem;
 }
 
 .shopping th {

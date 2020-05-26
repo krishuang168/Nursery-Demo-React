@@ -7,25 +7,45 @@ import PlantCard from './PlantCard';
 
 // Display all plants in a specific category
 export const Flowers = () => {
-    return (  
-        <PlantCard plantsData={FLOWERS} />
+    return (
+        <React.Fragment>
+            <div className="container">
+                <h3>Flowers</h3>
+                <PlantCard plantsData={FLOWERS} />
+            </div>
+        </React.Fragment>
     );
 }
 
 export const Veggies = () => {
-    return (  
-        <PlantCard plantsData={VEGGIES} />
+    return (
+        <React.Fragment>
+            <div className="container">
+                <h3>Vegetables</h3>
+                <PlantCard plantsData={VEGGIES} />
+            </div>
+        </React.Fragment>
     );
 }
 
 export const Herbs = () => {
-    return (  
-        <PlantCard plantsData={HERBS} />
+    return (
+        <React.Fragment>
+            <div className="container">
+                <h3>Herbs</h3>
+                <PlantCard plantsData={HERBS} />
+            </div>
+        </React.Fragment>
     );
 }
 
 export const Trees = () => {
-    return (  
-        <PlantCard plantsData={TREES} />
+    return (
+        <React.Fragment>
+            <div className="container">
+                <h3>Trees & Bushes</h3>
+                <PlantCard plantsData={TREES} />
+            </div>
+        </React.Fragment>
     );
 }

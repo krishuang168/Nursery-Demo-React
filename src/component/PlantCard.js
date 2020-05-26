@@ -4,7 +4,9 @@ import { ShoppingCard } from './Cards';
 
 const PlantCard = ({plantsData}) => {
     const plants = plantsData.map(item => 
-        <Col sm={3} md={4}><ShoppingCard name={item.name} image={item.image} className="shopping" /></Col>
+        <Col sm={3} md={4}>
+            <ShoppingCard name={item.name} image={item.image} className="shopping" />
+        </Col>
         );
 
     return (
