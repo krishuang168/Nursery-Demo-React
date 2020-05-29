@@ -12,7 +12,7 @@ class About extends Component {
 
             <div className="container">
                 <Row>
-                    <Col xs={1}></Col>
+                    <Col xs={1} />
                     <Col>
                         <Row><Col><strong>Lastest Update</strong></Col></Row>
                         <Row><Col>May 1, 2020</Col></Row>

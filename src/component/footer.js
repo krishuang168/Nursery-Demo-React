@@ -24,8 +24,8 @@ function Footer(props) {
                         <a className="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube" /></a> 
                     </div>
                     <div className="col-sm-4 text-center">
-                        <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> +1-(425)-426-8778</a><br />
-                        <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> contact@cottagelakeseeds.com</a>
+                        <a role="button" className="btn btn-link" href="tel:+142542658778"><i className="fa fa-phone" /> +1-(425)-426-8778</a><br />
+                        <a role="button" className="btn btn-link" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> contact@cottagelakenursery.com</a>
                     </div>
                 </div>
             </div>

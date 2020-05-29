@@ -14,7 +14,7 @@ function Header() {
                 </Col>
                 <Col>
                     <Row>
-                        <Col xs={10} sm={7} md={5}><h1 className="banner">Cottage Lake Seeds</h1></Col>
+                        <Col xs={10} sm={7} md={5}><h1 className="banner">Cottage Lake Nursery</h1></Col>
                         <Col className="navbar mr-5">
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/about_us">About Us</NavLink>
@@ -25,7 +25,7 @@ function Header() {
                         </Col>
                     </Row>
                     <Row>
-                    <h2 className="banner">Established in 2020, we aim to provide <em>quality seeds</em> & <em>seedlings</em> in the Pacific Northwest.</h2>
+                    <h2 className="banner">Established in 2020, we aim to provide <em>quality seeds</em> & <em>plantlings</em> in the Pacific Northwest.</h2>
                     </Row>
                 </Col>
             </Row>            
