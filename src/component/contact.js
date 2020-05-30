@@ -26,7 +26,7 @@ const Contact = () => {
                         </div>
                         <div className="col">
                             <a role="button" href="tel:+12065551234"><i className="fa fa-phone"></i> +1-(425)-426-8778</a><br />
-                            <a role="button" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> contact@cottagelakeseeds.com</a>
+                            <a role="button" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> contact@cottagelakenursery.com</a>
                         </div>
                 </Row>   
                 <div className="row row-content" />
