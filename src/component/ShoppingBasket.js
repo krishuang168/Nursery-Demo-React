@@ -3,59 +3,78 @@ import { Link } from 'react-router-dom';
 import { Button, Col, Table } from 'reactstrap';
 import { SmallCard } from './Cards';
 import shoppingBasket from '../shared/svg/shoppingBasket.svg';
-
+import { initialBasket } from '../shared/data/InitialBasket';
 
 class ShoppingBasket extends Component {
     constructor(props) {
         super(props);
 
-        this.state = [
-            {   
-                id: 0,
-                name: "Forget-me-not",
-                image: "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFFOR113-1_medium.jpg",
-                price: 1.99,
-                quantity: 2,
-            },
-            {   
-                id: 1,
-                name: "Purple Shiso",
-                image: "https://www.edenbrothers.com/store/media/Seeds-Herbs/resized/SHPER111-1_medium.jpg",
-                price: 3.99,
-                quantity: 3,
+        this.state = {
+            basket: initialBasket
+        };
+
+        // this.handleRemove = this.handleRemove.bind(this);
+    }
+
+    handleRemove = (e) => {
+        const updatedBasket = this.state.basket.filter(item => item.id !== e.id);
+        this.setState( this.state.basket = updatedBasket );
+    }
+
+    handlePlusOne = (e) => {
+        var updatedBasket = this.state.basket.map(item => {
+            var tempArray = {...item};
+          
+            if (item.id === e.id) {
+              tempArray.quantity += 1;
             }
-        ];
+          
+            return tempArray
+        });
 
-        this.handleRemove = this.handleRemove.bind(this);
+        this.setState({
+            basket: updatedBasket
+        });
     }
 
-    handleRemove(e) {
-        this.setState({price: null});
-    }
+    handleMinusOne = (e) => {
+        var updatedBasket = this.state.basket.map(item => {
+            var tempArray = {...item};
+          
+            if (item.id === e.id && tempArray.quantity > 0 ) {
+                tempArray.quantity -= 1;
+                
+            } // else (quantity == 0): do nothing
+            return tempArray;
+        });
+        // Remove (qunatity == 0) items
+        updatedBasket = updatedBasket.filter(item => item.quantity > 0);
 
-    handlePlusOne(e) {
-        // this.setState({price: null});
+        this.setState({
+            basket: updatedBasket
+        });
+        console.log(this.state.basket);
     }
 
     render(){
-        var total=0;
-        const merchandise = this.state.map( item => {
-            total+=item.price*item.quantity;
+        var subtotal=0;
+        const merchandise = this.state.basket.map( item => {
+            subtotal+=item.price*item.quantity;
 
             return (
                 <tr>
-                    <td>
+                    <td className="center">
                         <SmallCard name={item.name} image={item.image} text={`$${item.price}`}/>
                     </td>  
-                    {/* <td className="center">${item.price}</td> */}
                     <td className="center">{item.quantity}</td>
                     <td className="center">
-                        <Button className="btn-primary" onClick={this.handlePlusOne}>+</Button>{' '}
-                        <Button className="btn-primary" onClick={this.handleMinusOne}>-</Button>{' '}
-                        <Button className="btn-primary" onClick={this.handleRemove}>Remove</Button>
-
+                        <Button className="btn-primary" onClick={() => this.handlePlusOne(item)}>+</Button>
+                        {' '}
+                        <Button className="btn-primary" onClick={()=> this.handleMinusOne(item)}>-</Button>
+                        {' '}
+                        <Button className="btn-primary" onClick={() => this.handleRemove(item)}>Remove</Button>
                     </td>
-                    <td className="center">${item.price*item.quantity}</td>
+                    <td className="center">{`$${(item.price*item.quantity).toFixed(2)}`}</td>
                 </tr>
             );
         });
@@ -70,10 +89,10 @@ class ShoppingBasket extends Component {
                 <Table>
                     <thead className="shopping">
                         <tr>
-                        <th className="center">Product</th>
-                        <th className="center">Quantity</th>
-                        <th className="center">Actions</th>
-                        <th className="center">Subtotal</th>
+                        <th className="center" colSpan="1">Product</th>
+                        <th className="center" colSpan="1">Quantity</th>
+                        <th className="center" colSpan="1">Actions</th>
+                        <th className="center" colSpan="1">Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -81,7 +100,7 @@ class ShoppingBasket extends Component {
                     </tbody>
                 </Table>
                 <hr />
-                <div className="row row-content mr-3 right bold">Total: ${total.toFixed(2)}</div>
+                <div className="row row-content mr-3 right bold">Subtotal: ${subtotal.toFixed(2)}</div>
                 <div className="row-content">
                 <Link to="/catalog">
                     <Button className="btn-light ml-auto">Conitnue shopping</Button>

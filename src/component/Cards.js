@@ -20,7 +20,7 @@ export const BigCard = ({name, image, text}) => {
 
 export const SmallCard = ({name, image, text}) => {
     return (
-        <Card>
+        <Card style={{width: "15rem"}}>
             <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}}
                 ><strong>{name}</strong>
             </CardHeader>
