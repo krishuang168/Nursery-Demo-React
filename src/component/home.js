@@ -15,8 +15,8 @@ class Home extends Component {
                     <Row>
                         <Col xs={1} />
                         <Col>
-                            <Carousel interval={1000} keyboard={false} pauseOnHover={false}>
-                                <Carousel.Item active style={{height:"30em"}}>
+                            <Carousel interval={1000} keyboard={false} pause={false} touch slide>
+                                <Carousel.Item style={{height:"30em"}}>
                                     <img className="d-block w-100" 
                                         style={{height:"30em", objectFit: "cover"}} 
                                         alt="Our Farm Land" title="Our Farm Land"

@@ -36,10 +36,10 @@ export const SmallCard = ({name, image, text}) => {
 
 export const ShoppingCard = ({name, image, text, price}) => {
     return (
-        <Card sm={2} md={3}>
+        <Card sm={2} md={4}>
             <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}} className="card-header">
                 <Row>
-                    <Col xs={9}><strong>{name}</strong></Col>
+                    <Col xs={8}><strong>{name}</strong></Col>
                     <Col>
                         <Button className="right btn-primary">
                             <span className="no-underline" style={{fontSize: "0.1em"}}>➜</span>

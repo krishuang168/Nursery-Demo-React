@@ -28,7 +28,6 @@ class ShoppingBasket extends Component {
             if (item.id === e.id) {
               tempArray.quantity += 1;
             }
-          
             return tempArray
         });
 
@@ -42,8 +41,7 @@ class ShoppingBasket extends Component {
             var tempArray = {...item};
           
             if (item.id === e.id && tempArray.quantity > 0 ) {
-                tempArray.quantity -= 1;
-                
+                tempArray.quantity -= 1;   
             } // else (quantity == 0): do nothing
             return tempArray;
         });
@@ -53,7 +51,6 @@ class ShoppingBasket extends Component {
         this.setState({
             basket: updatedBasket
         });
-        console.log(this.state.basket);
     }
 
     render(){
@@ -62,7 +59,7 @@ class ShoppingBasket extends Component {
             subtotal+=item.price*item.quantity;
 
             return (
-                <tr>
+                <tr key={item.id}>
                     <td className="center">
                         <SmallCard name={item.name} image={item.image} text={`$${item.price}`}/>
                     </td>  
