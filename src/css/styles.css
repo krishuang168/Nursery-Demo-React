@@ -228,17 +228,20 @@ iframe {
 
 /* Animation */
 .growth {
-  flex: 1; /*grow*/
-  animation: growing ease-in-out backwards;
-  animation-duration: 1.5s;
+  position: relative;
+  flex: 300; /*grow*/
+  animation: growing ease-out;
+  animation-duration: 1.2s;
 }
 
 @keyframes growing {
   0% {
-    width: 0;
+    width: 0%;
+    height: -60%;
   }
   100% {
     width: 60%;
+    height: -10%;
   }
 }
 /* End of Animation */
