@@ -40,7 +40,12 @@ export const ShoppingCard = ({name, image, text, price}) => {
             <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}} className="card-header">
                 <Row>
                     <Col xs={9}><strong>{name}</strong></Col>
-                    <Col><Button className="right btn-primary"><img src={shoppingBasket} title="Shopping Basket" alt="Shopping Basket" width="20" /></Button></Col>
+                    <Col>
+                        <Button className="right btn-primary">
+                            <span className="no-underline" style={{fontSize: "0.1em"}}>➜</span>
+                            <img src={shoppingBasket} title="Shopping Basket" alt="Shopping Basket" width="15" />
+                        </Button>
+                    </Col>
                 </Row>
             </CardHeader>
             <CardBody>

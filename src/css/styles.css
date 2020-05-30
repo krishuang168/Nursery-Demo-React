@@ -4,6 +4,7 @@
 /* Color-lighter: #e5cbf8 */
 /* Light-blue: #bbe5f9 */
 /* Light-green: #d1ffd8 */
+/* Dark-green: #60a060 */
 
 @font-face {
   font-family: 'Cheddar Jack';
@@ -60,7 +61,7 @@ h3 {
   font-size: 3em;
   position: relative;
   top: 2rem;
-  padding-left: 1em;
+  padding-left: 0.5em;
   margin-top: .5rem;
   margin-bottom: 0rem;
   letter-spacing: 0.2em;
@@ -160,7 +161,13 @@ iframe {
   color: black;
 }
 
-.navbar a:hover:not(.active) {background-color: #d1ffd8;}
+.navbar a:hover:not(.active) {
+  background-color: #d1ffd8;
+}
+
+.no-underline:hover{
+  text-decoration: none;
+}
 
 .right {
   float: right;

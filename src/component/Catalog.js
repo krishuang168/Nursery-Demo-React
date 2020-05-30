@@ -18,28 +18,28 @@ class Catalog extends Component {
                             <hr />
                             <Row>
                                 <Col md={3}>
-                                    <Link to="/flowers">
+                                    <Link to="/flowers" className="no-underline">
                                         <BigCard name="Flowers" 
                                         image="https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFFOR113-1_medium.jpg"
                                         />
                                     </Link>
                                 </Col>
                                 <Col md={3}>
-                                    <Link to="/veggies">
+                                    <Link to="/veggies" className="no-underline">
                                     <BigCard name="Vegetables" 
                                     image="https://www.edenbrothers.com/store/media/Seeds-Vegetables/resized/SVLET120-1_medium.jpg"
                                     />
                                     </Link>
                                 </Col>
                                 <Col md={3}>
-                                    <Link to="/herbs">
+                                    <Link to="/herbs" className="no-underline">
                                     <BigCard name="Herbs" 
                                     image="https://www.edenbrothers.com/store/media/Seeds-Herbs/resized/SHPER111-1_medium.jpg"
                                     />
                                     </Link>
                                 </Col>
                                 <Col md={3}>
-                                    <Link to="/trees">
+                                    <Link to="/trees" className="no-underline">
                                     <BigCard name="Trees & Bushes" 
                                     image="https://d3hne3c382ip58.cloudfront.net/resized/400x400/cherry-blossom-festival-tour-and-trips-400X400_1572932637.JPG"
                                     />
