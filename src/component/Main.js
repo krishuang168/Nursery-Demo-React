@@ -13,10 +13,8 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
     return {
-        // campsites: state.campsites,
-        // comments: state.comments,
-        // partners: state.partners,
-        // promotions: state.promotions
+        basket: [],
+        total: 0
     };
 };
 

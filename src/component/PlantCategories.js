@@ -4,6 +4,7 @@ import { VEGGIES } from '../shared/data/veggies';
 import { HERBS } from '../shared/data/herbs';
 import { TREES } from '../shared/data/trees';
 import PlantCard from './PlantCards';
+import * as ActionTypes from '../redux/ActionTypes';
 
 // Display all plants in a specific category
 export const Flowers = () => {
