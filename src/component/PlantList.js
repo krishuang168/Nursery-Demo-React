@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col} from 'reactstrap';
 import { ShoppingCard } from './Cards';
 
-const PlantCard = ({plantsData}) => {
+const PlantList = ({plantsData}) => {
     const plants = plantsData.map(item => 
         <Col sm={3} md={4}>
             <ShoppingCard className="shopping"
@@ -12,7 +12,7 @@ const PlantCard = ({plantsData}) => {
                 price={item.price}
             />
         </Col>
-        );
+    );
 
     return (
         <React.Fragment>
@@ -26,4 +26,4 @@ const PlantCard = ({plantsData}) => {
     );
 }
 
-export default PlantCard;
+export default PlantList;
