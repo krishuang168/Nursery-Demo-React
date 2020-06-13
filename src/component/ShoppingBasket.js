@@ -27,7 +27,7 @@ class ShoppingBasket extends Component {
     const updatedBasket = this.state.basket.filter((item) => item.id !== e.id);
 
     this.setState({ basket: updatedBasket });
-    this.props.updateBasket(this.state);
+    this.props.updateBasket(updatedBasket);
   };
 
   handlePlusOne = (e) => {
