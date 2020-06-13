@@ -1,3 +1,4 @@
+// Put a few items in the basket instead of using an empty basket
 export const initialBasket = [
     {   
         id: 0,

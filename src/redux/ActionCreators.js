@@ -4,12 +4,13 @@ export const addItem = (index) => (
     {
         type: ActionTypes.ADD_ITEM,
         payload: { 
-            index: index,
-            quantity: quantity
+            index,
         }
     }
 );
 
+
+// == Now implemented in the local state ==
 // export const RemoveItem = (index) => (
 //     {
 //         type: ActionTypes.REMOVE_ITEM,

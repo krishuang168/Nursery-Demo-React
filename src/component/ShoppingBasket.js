@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col, Table } from 'reactstrap';
+import { connect } from "react-redux";
+// import { addItem } from "../redux/ActionCreators";
 import { SmallCard } from './Cards';
 import shoppingBasket from '../shared/svg/shoppingBasket.svg';
-import { initialBasket } from '../shared/data/InitialBasket';
+
+const mapStateToProps = (state) => {
+    return {
+      basket: state.basket,
+    };
+  };
 
 class ShoppingBasket extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            basket: initialBasket
+            basket: this.props.basket,
         };
 
         // this.handleRemove = this.handleRemove.bind(this);
@@ -109,4 +116,4 @@ class ShoppingBasket extends Component {
     }
 }
 
-export default ShoppingBasket;
+export default connect(mapStateToProps)(ShoppingBasket);
