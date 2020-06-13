@@ -4,7 +4,7 @@ import { ShoppingCard } from "./Cards";
 
 const PlantList = ({ plantsData }) => {
   const plants = plantsData.map((item) => (
-    <Col sm={3} md={4} key={item.index}>
+    <Col sm={3} md={4}>
       <ShoppingCard
         className="shopping"
         name={item.name}
