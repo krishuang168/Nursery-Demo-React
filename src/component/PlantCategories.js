@@ -4,7 +4,7 @@ import { FLOWERS } from '../shared/data/flowers';
 import { VEGGIES } from '../shared/data/veggies';
 import { HERBS } from '../shared/data/herbs';
 import { TREES } from '../shared/data/trees';
-import PlantCard from './PlantCards';
+import PlantList from './PlantList';
 import * as ActionTypes from '../redux/ActionTypes';
 
 // Display all plants in a specific category
@@ -13,7 +13,7 @@ export const Flowers = () => {
         <React.Fragment>
             <div className="container">
                 <h3><Link to="/catalog" className="no-underline" style={{fontSize: "0.5em"}}>🔙</Link>{' '}Flowers</h3>
-                <PlantCard plantsData={FLOWERS} />
+                <PlantList plantsData={FLOWERS} />
             </div>
         </React.Fragment>
     );
@@ -24,7 +24,7 @@ export const Veggies = () => {
         <React.Fragment>
             <div className="container">
                 <h3><Link to="/catalog" className="no-underline" style={{fontSize: "0.5em"}}>🔙</Link>{' '}Vegetables</h3>
-                <PlantCard plantsData={VEGGIES} />
+                <PlantList plantsData={VEGGIES} />
             </div>
         </React.Fragment>
     );
@@ -35,7 +35,7 @@ export const Herbs = () => {
         <React.Fragment>
             <div className="container">
                 <h3><Link to="/catalog" className="no-underline" style={{fontSize: "0.5em"}}>🔙</Link>{' '}Herbs</h3>
-                <PlantCard plantsData={HERBS} />
+                <PlantList plantsData={HERBS} />
                 <span style={{fontSize:"0.5em", color:"#000"}}>TCM: Traditional Chinese Medicine herbs</span>
             </div>
         </React.Fragment>
@@ -47,7 +47,7 @@ export const Trees = () => {
         <React.Fragment>
             <div className="container">
                 <h3><Link to="/catalog" className="no-underline" style={{fontSize: "0.5em"}}>🔙</Link>{' '}Trees & Bushes</h3>
-                <PlantCard plantsData={TREES} />
+                <PlantList plantsData={TREES} />
             </div>
         </React.Fragment>
     );
