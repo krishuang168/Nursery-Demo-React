@@ -2,13 +2,27 @@ import * as ActionTypes from './ActionTypes';
 
 export const putInBasket = (state = [], action) => {
 
-    if (action.type === ActionTypes.PUT_IN_BASKET) {
-        const newItem = { ...action.payload, id: state.basket.length };
-        const newState = { ...state, basket: state.basket.concat(newItem) };
+    if(state.basket) {
+        if (action.type === ActionTypes.PUT_IN_BASKET) {
+            const newItem = { ...action.payload, id: state.basket.length };
+            console.log( "state.basket: " + JSON.stringify(state.basket) );
 
-        console.log( " NEW STATE is " + newState );
-        return newState;
+            const newState = { ...state, basket: state.basket.concat(newItem) };
+            console.log( " NEW STATE is " + JSON.stringify(newState) );
+
+            return newState;
+        }
+        return state;
     }
-    return state;
+    else {
+        if (action.type === ActionTypes.PUT_IN_BASKET) {
+            const newItem = { ...action.payload, id: 0 };
+            const newState = { basket: newItem };
+
+            console.log( " NEW STATE is " + newState );
+            return newState;
+        }
+        return state;
+    }
     
 };

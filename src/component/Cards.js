@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { putInBasket } from '../redux/ActionCreators'
 import { Card, CardHeader, CardBody, CardImg, CardText, 
         Row, Col, Button} from 'reactstrap';
 import shoppingBasket from '../shared/svg/shoppingBasketWhite.svg';
@@ -34,14 +36,25 @@ export const SmallCard = ({name, image, text}) => {
     );
 }
 
-export const ShoppingCard = ({name, image, text, price}) => {
+const mapDispatchToProps =  {
+    putInBasket: (item_index) => putInBasket(item_index),
+};
+
+const ShoppingCard_original = (props) => {
+    const {name, image, text, price} = props;
+    const itemData = {name, image, price, quantity: 1};
+    console.log("itemData: " + JSON.stringify(itemData) );
+
     return (
         <Card sm={2} md={4}>
             <CardHeader style={{backgroundColor: '#c3a0e5', textAlign: 'center'}} className="card-header">
                 <Row>
                     <Col xs={8}><strong>{name}</strong></Col>
                     <Col>
-                        <Button className="right btn-primary">
+                        <Button 
+                            className="right btn-primary" 
+                            onClick={props.putInBasket(itemData)}
+                        >
                             <span className="no-underline" style={{fontSize: "0.1em"}}>➜</span>
                             <img src={shoppingBasket} title="Shopping Basket" alt="Shopping Basket" width="15" />
                         </Button>
@@ -58,3 +71,6 @@ export const ShoppingCard = ({name, image, text, price}) => {
         </Card>
     );
 }
+
+// export { ShoppingCard };
+export const ShoppingCard = connect(null, mapDispatchToProps)(ShoppingCard_original);

@@ -1,33 +1,23 @@
 import * as ActionTypes from './ActionTypes';
+import { fullPlantList } from '../shared/data/fullPlantList';
 
-export const addItem = (index) => (
-    {
-        type: ActionTypes.ADD_ITEM,
-        payload: { 
-            index,
+
+export const putInBasket = (index) => {
+    const selectedItem = fullPlantList.filter(item => item.index === index);
+    console.log("Selected item: " + JSON.stringify(selectedItem));  // Debug
+
+    return (
+        {
+            type: ActionTypes.PUT_IN_BASKET,
+            payload: selectedItem
         }
-    }
-);
-
+    );
+};
 
 // == Now implemented in the local state ==
-// export const RemoveItem = (index) => (
-//     {
-//         type: ActionTypes.REMOVE_ITEM,
-//         payload: { index: index }
-//     }
-// );
-
-// export const ItemPlusOne = (index) => (
-//     {
-//         type: ActionTypes.ITEM_PLUS_ONE,
-//         payload: { index: index }
-//     }
-// );
-
-// export const ItemMinusOne = (index) => (
-//     {
-//         type: ActionTypes.ITEM_MINUS_ONE,
-//         payload: { index: index }
-//     }
-// );
+export const updateBasket = (basket) => (
+    {
+        type: ActionTypes.UPDATE_BASKET,
+        payload: basket
+    }
+);

@@ -1,10 +1,10 @@
 import { createStore, combineReducers } from 'redux';
-import { addItem} from './addItemReducer';
+import { putInBasket } from './putInBasket-reducer';
+import { updateBasket } from './updateBasket-reducer';
+
 
 export const ConfigureStore = () => {
-    const store = createStore(
-        combineReducers( {addItem, } )
-    );
+    const store = createStore( combineReducers( {updateBasket, putInBasket} ) );
 
     return store;
 };

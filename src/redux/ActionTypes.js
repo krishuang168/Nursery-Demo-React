@@ -1,5 +1,4 @@
-export const ADD_ITEM = 'ADD_ITEM';
+export const PUT_IN_BASKET = 'PUT_IN_BASKET';
 
-// export const REMOVE_ITEM = 'REMOVE_ITEM';
-// export const ITEM_PLUS_ONE = 'ITEM_PLUS_ONE';
-// export const ITEM_MINUS_ONE = 'ITEM_MINUS_ONE';
+// ShoppingBasket Component
+export const UPDATE_BASKET = 'UPDATE_BASKET';

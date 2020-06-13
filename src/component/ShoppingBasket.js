@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col, Table } from 'reactstrap';
-import { connect } from "react-redux";
-// import { addItem } from "../redux/ActionCreators";
+import { connect } from 'react-redux';
+import { updateBasket } from '../redux/ActionCreators'
 import { SmallCard } from './Cards';
 import shoppingBasket from '../shared/svg/shoppingBasket.svg';
 
 const mapStateToProps = (state) => {
-    return {
-      basket: state.basket,
-    };
-  };
+    return { basket: state.updateBasket};
+};
+
+const mapDispatchToProps =  {
+    updateBasket: (basket) => updateBasket(basket),
+};
 
 class ShoppingBasket extends Component {
     constructor(props) {
@@ -19,13 +21,13 @@ class ShoppingBasket extends Component {
         this.state = {
             basket: this.props.basket,
         };
-
-        // this.handleRemove = this.handleRemove.bind(this);
     }
 
     handleRemove = (e) => {
         const updatedBasket = this.state.basket.filter(item => item.id !== e.id);
-        this.setState( this.state.basket = updatedBasket );
+
+        this.setState({ basket: updatedBasket });
+        this.props.updateBasket(this.state);
     }
 
     handlePlusOne = (e) => {
@@ -38,9 +40,8 @@ class ShoppingBasket extends Component {
             return tempArray
         });
 
-        this.setState({
-            basket: updatedBasket
-        });
+        this.setState( {basket: updatedBasket} );
+        this.props.updateBasket(updatedBasket);
     }
 
     handleMinusOne = (e) => {
@@ -55,9 +56,9 @@ class ShoppingBasket extends Component {
         // Remove (qunatity == 0) items
         updatedBasket = updatedBasket.filter(item => item.quantity > 0);
 
-        this.setState({
-            basket: updatedBasket
-        });
+        this.setState( {basket: updatedBasket} );
+        this.props.updateBasket(updatedBasket);
+
     }
 
     render(){
@@ -116,4 +117,4 @@ class ShoppingBasket extends Component {
     }
 }
 
-export default connect(mapStateToProps)(ShoppingBasket);
+export default connect(mapStateToProps, mapDispatchToProps)(ShoppingBasket);
