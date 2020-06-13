@@ -1,28 +1,25 @@
-import * as ActionTypes from './ActionTypes';
+import * as ActionTypes from "./ActionTypes";
 
 export const putInBasket = (state = [], action) => {
+  if (state.basket) {
+    if (action.type === ActionTypes.PUT_IN_BASKET) {
+      const newItem = { ...action.payload, id: state.basket.length };
+      console.log("state.basket: " + JSON.stringify(state.basket));
 
-    if(state.basket) {
-        if (action.type === ActionTypes.PUT_IN_BASKET) {
-            const newItem = { ...action.payload, id: state.basket.length };
-            console.log( "state.basket: " + JSON.stringify(state.basket) );
+      const newState = { ...state, basket: state.basket.concat(newItem) };
+      console.log(" NEW STATE is " + JSON.stringify(newState));
 
-            const newState = { ...state, basket: state.basket.concat(newItem) };
-            console.log( " NEW STATE is " + JSON.stringify(newState) );
-
-            return newState;
-        }
-        return state;
+      return newState;
     }
-    else {
-        if (action.type === ActionTypes.PUT_IN_BASKET) {
-            const newItem = { ...action.payload, id: 0 };
-            const newState = { basket: newItem };
+    return state;
+  } else {
+    if (action.type === ActionTypes.PUT_IN_BASKET) {
+      const newItem = { ...action.payload, id: 0 };
+      const newState = { basket: newItem };
 
-            console.log( " NEW STATE is " + newState );
-            return newState;
-        }
-        return state;
+      console.log(" NEW STATE is " + newState);
+      return newState;
     }
-    
+    return state;
+  }
 };
