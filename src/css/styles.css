@@ -26,20 +26,21 @@ a:hover {
 
 h1 {
   position: relative;
-  left: 2rem;
-  top: 0.1em;
+  left: 1rem;
   font-family:"gisella";
-  font-size: 60px;
+  font-size: 5rem;
   letter-spacing: 5px;
+  margin-bottom: 0.3em;
   color: #764abc;
 }
 
 h2 {
   position: relative;
-  left: 3.5rem;
-  top: 0.1rem;
-  font-size: 0.2em;
-  letter-spacing: 0.2em;
+  left: 2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  font-size: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 h2 em {
@@ -107,6 +108,27 @@ iframe {
   border-color: #a07dd8;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+
+.card {
+  box-shadow: 10px 10px 5px #aaa;
+  margin-bottom: 3em;
+}
+
+.card-small {
+  width: 15rem;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-header {
   display: block;
   font-size: 0.9rem;
@@ -123,19 +145,8 @@ iframe {
   margin-bottom: 2em;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.center {
-  text-align: center;
-  vertical-align: middle;
-  align-items: center;
-  justify-content: center;
-}
-
 .logo-big {
-  width: 11.7em;
+  width: 7em;
   float: left;
   border-radius: 2.5em;
 }
@@ -229,19 +240,19 @@ iframe {
 /* Animation */
 .growth {
   position: relative;
-  flex: 300; /*grow*/
-  animation: growing ease-out;
-  animation-duration: 1.2s;
+  flex: 200; /*grow*/
+  animation: growing ease-in-out;
+  animation-duration: 1000ms;
 }
 
 @keyframes growing {
   0% {
-    width: 0%;
-    height: -60%;
+    width: 0;
+    height: -60;
   }
   100% {
-    width: 60%;
-    height: -10%;
+    width: 30;
+    height: -10;
   }
 }
 /* End of Animation */
@@ -254,37 +265,3 @@ iframe {
   width: 40rem;
   margin-bottom: 2rem;
 }
-
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-*/

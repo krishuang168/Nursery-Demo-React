@@ -15,7 +15,7 @@ import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
 export const BigCard = ({ name, image, text }) => {
   return (
-    <Card sm={2} md={3}>
+    <Card sm={2} md={3} className="card">
       <CardHeader style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}>
         <strong>{name}</strong>
       </CardHeader>
@@ -29,7 +29,7 @@ export const BigCard = ({ name, image, text }) => {
 
 export const SmallCard = ({ name, image, text }) => {
   return (
-    <Card style={{ width: "15rem" }}>
+    <Card className="card card-small">
       <CardHeader style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}>
         <strong>{name}</strong>
       </CardHeader>
@@ -59,7 +59,7 @@ const ShoppingCard_original = (props) => {
   console.log("itemData: " + JSON.stringify(itemData));
 
   return (
-    <Card sm={2} md={4}>
+    <Card sm={2} md={4} className="card">
       <CardHeader
         style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}
         className="card-header"

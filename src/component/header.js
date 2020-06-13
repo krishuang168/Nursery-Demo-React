@@ -8,14 +8,14 @@ function Header() {
   return (
     <React.Fragment>
       <Row>
-        <Col xs={7} sm={4} md={2}>
+        <Col xs={6} sm={4} md={2}>
           <Link to="/home">
             <img src={logo} alt="Logo" className="logo-big" />
           </Link>
         </Col>
         <Col>
           <Row>
-            <Col xs={10} sm={7} md={5}>
+            <Col xs={10} sm={7}>
               <h1 className="banner">Cottage Lake Nursery</h1>
             </Col>
             <Col className="navbar mr-5">
@@ -38,7 +38,7 @@ function Header() {
           </Row>
           <Row>
             <h2 className="banner">
-              Established in 2020, we aim to provide <em>quality seeds</em> &{" "}
+              Established in 2020, we aim to provide <em>quality seeds</em> &
               <em>plantlings</em> in the Pacific Northwest.
             </h2>
           </Row>

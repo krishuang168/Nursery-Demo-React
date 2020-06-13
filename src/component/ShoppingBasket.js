@@ -65,52 +65,48 @@ class ShoppingBasket extends Component {
     const basket = this.state.basket; // To avoid touch the state directly
     console.log("Basket is " + JSON.stringify(basket));
 
-    // if (basket) {
-      const merchandise = basket.map((item) => {
-        subtotal += item.price * item.quantity;
+    const merchandise = basket.map((item) => {
+      subtotal += item.price * item.quantity;
 
-        return (
-          <tr key={item.id}>
-            <td className="center">
-              <SmallCard
-                name={item.name}
-                image={item.image}
-                text={`$${item.price}`}
-              />
-            </td>
-            <td className="center">{item.quantity}</td>
-            <td className="center">
-              {/* The '+' Button */}
-              <Button
-                className="btn-primary"
-                onClick={() => this.handlePlusOne(item)}
-              >
-                +
-              </Button>{" "}
-              {/* The '-' Button */}
-              <Button
-                className="btn-primary"
-                onClick={() => this.handleMinusOne(item)}
-              >
-                -
-              </Button>{" "}
-              {/* The 'Remove' Button */}
-              <Button
-                className="btn-primary"
-                onClick={() => this.handleRemove(item)}
-              >
-                Remove
-              </Button>
-            </td>
-            <td className="center">{`$${(item.price * item.quantity).toFixed(
-              2
-            )}`}</td>
-          </tr>
-        );
-      });
-    // } else {
-    //   const merchandise = new Array(0);
-    // }
+      return (
+        <tr key={item.id}>
+          <td className="center">
+            <SmallCard
+              name={item.name}
+              image={item.image}
+              text={`$${item.price}`}
+            />
+          </td>
+          <td className="center">{item.quantity}</td>
+          <td className="center">
+            {/* The '+' Button */}
+            <Button
+              className="btn-primary"
+              onClick={() => this.handlePlusOne(item)}
+            >
+              +
+            </Button>{" "}
+            {/* The '-' Button */}
+            <Button
+              className="btn-primary"
+              onClick={() => this.handleMinusOne(item)}
+            >
+              -
+            </Button>{" "}
+            {/* The 'Remove' Button */}
+            <Button
+              className="btn-primary"
+              onClick={() => this.handleRemove(item)}
+            >
+              Remove
+            </Button>
+          </td>
+          <td className="center">{`$${(item.price * item.quantity).toFixed(
+            2
+          )}`}</td>
+        </tr>
+      );
+    });
 
     return (
       <div className="container">
