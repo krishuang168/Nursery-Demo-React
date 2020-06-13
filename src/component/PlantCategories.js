@@ -5,7 +5,6 @@ import { VEGGIES } from "../shared/data/veggies";
 import { HERBS } from "../shared/data/herbs";
 import { TREES } from "../shared/data/trees";
 import PlantList from "./PlantList";
-import * as ActionTypes from "../redux/ActionTypes";
 
 // Display all plants in a specific category
 export const Flowers = () => {
@@ -18,7 +17,7 @@ export const Flowers = () => {
             className="no-underline"
             style={{ fontSize: "0.5em" }}
           >
-            🔙
+            <span role="img" aria-label="Go Back">🔙</span>
           </Link>{" "}
           Flowers
         </h3>
@@ -38,7 +37,7 @@ export const Veggies = () => {
             className="no-underline"
             style={{ fontSize: "0.5em" }}
           >
-            🔙
+            <span role="img" aria-label="Go Back">🔙</span>
           </Link>{" "}
           Vegetables
         </h3>
@@ -58,7 +57,7 @@ export const Herbs = () => {
             className="no-underline"
             style={{ fontSize: "0.5em" }}
           >
-            🔙
+            <span role="img" aria-label="Go Back">🔙</span>
           </Link>{" "}
           Herbs
         </h3>
@@ -81,7 +80,7 @@ export const Trees = () => {
             className="no-underline"
             style={{ fontSize: "0.5em" }}
           >
-            🔙
+            <span role="img" aria-label="Go Back">🔙</span>
           </Link>{" "}
           Trees & Bushes
         </h3>
