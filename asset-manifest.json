@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Nursery-Demo/static/css/main.38f161a8.chunk.css",
+    "main.js": "/Nursery-Demo/static/js/main.63faaa33.chunk.js",
+    "main.js.map": "/Nursery-Demo/static/js/main.63faaa33.chunk.js.map",
+    "runtime-main.js": "/Nursery-Demo/static/js/runtime-main.5bea734c.js",
+    "runtime-main.js.map": "/Nursery-Demo/static/js/runtime-main.5bea734c.js.map",
+    "static/css/2.cd43873f.chunk.css": "/Nursery-Demo/static/css/2.cd43873f.chunk.css",
+    "static/js/2.c8bc6eea.chunk.js": "/Nursery-Demo/static/js/2.c8bc6eea.chunk.js",
+    "static/js/2.c8bc6eea.chunk.js.map": "/Nursery-Demo/static/js/2.c8bc6eea.chunk.js.map",
+    "index.html": "/Nursery-Demo/index.html",
+    "precache-manifest.3545ff9e6847eb6ff568b1d76135f22e.js": "/Nursery-Demo/precache-manifest.3545ff9e6847eb6ff568b1d76135f22e.js",
+    "service-worker.js": "/Nursery-Demo/service-worker.js",
+    "static/css/2.cd43873f.chunk.css.map": "/Nursery-Demo/static/css/2.cd43873f.chunk.css.map",
+    "static/css/main.38f161a8.chunk.css.map": "/Nursery-Demo/static/css/main.38f161a8.chunk.css.map",
+    "static/js/2.c8bc6eea.chunk.js.LICENSE.txt": "/Nursery-Demo/static/js/2.c8bc6eea.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/Nursery-Demo/static/media/cheddar jack.862c8330.ttf",
+    "static/media/font-awesome.css": "/Nursery-Demo/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.svg": "/Nursery-Demo/static/media/logo.5e90f24a.svg",
+    "static/media/shoppingBasket.svg": "/Nursery-Demo/static/media/shoppingBasket.07fff518.svg",
+    "static/media/shoppingBasketWhite.svg": "/Nursery-Demo/static/media/shoppingBasketWhite.78c6b04a.svg",
+    "static/media/sideDeco.svg": "/Nursery-Demo/static/media/sideDeco.4fb2c2ea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bea734c.js",
+    "static/css/2.cd43873f.chunk.css",
+    "static/js/2.c8bc6eea.chunk.js",
+    "static/css/main.38f161a8.chunk.css",
+    "static/js/main.63faaa33.chunk.js"
+  ]
+}
