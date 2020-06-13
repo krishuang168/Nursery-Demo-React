@@ -7,7 +7,7 @@ export const putInBasket = (state = [], action) => {
       console.log("state.basket: " + JSON.stringify(state.basket));
 
       const newState = { ...state, basket: state.basket.concat(newItem) };
-      console.log(" NEW STATE is " + JSON.stringify(newState));
+      // console.log(" NEW STATE is " + JSON.stringify(newState));
 
       return newState;
     }
@@ -15,9 +15,9 @@ export const putInBasket = (state = [], action) => {
   } else {
     if (action.type === ActionTypes.PUT_IN_BASKET) {
       const newItem = { ...action.payload, id: 0 };
-      const newState = { basket: newItem };
+      const newState = [ newItem ];
 
-      console.log(" NEW STATE is " + newState);
+      console.log(" NEW STATE is " + JSON.stringify(newState));
       return newState;
     }
     return state;
