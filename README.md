@@ -16,7 +16,15 @@ Several features are still being built at the time being. Redux is halfway worki
 All photos were hotlinked to demo the concept of plant or seed sales.
 For educational purposes only. 
 
-#### For details, please check:
+#### Homepage Carousel:
+
+"Our Farm Land": https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1076293128%2F960x0.jpg%3Ffit%3Dscale
+                  
+"Our Greenhouse": https://media.istockphoto.com/photos/allotments-at-sunset-plastic-greenhouse-picture-id483728598?k=6&m=483728598&s=612x612&w=0&h=-N4X-CHwDLBcHfdQqsv9mgtNssRn9icTZPq42h-RYmA=
+                  
+"Inside The Greenhouse": https://www.plantsbycreekside.com/wp-content/uploads/2015/03/greenhouse4-H2-2015.jpg
+
+#### For the photos of plants, please check:
 
 Flowers:
 https://github.com/krishuang168/Nursery-Demo-React/blob/master/src/shared/data/flowers.js
