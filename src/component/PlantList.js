@@ -1,11 +1,11 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import { ShoppingCard } from "./Cards";
+import { CatalogCard } from "./Cards";
 
 const PlantList = ({ plantsData }) => {
   const plants = plantsData.map((item) => (
     <Col xs={12} sm={6} md={4} key={item.index}>
-      <ShoppingCard
+      <CatalogCard
         className="shopping"
         index={item.index}
         name={item.name}

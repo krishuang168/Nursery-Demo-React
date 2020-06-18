@@ -45,12 +45,12 @@ export const SmallCard = ({ name, image, text }) => {
   );
 };
 
-// == ShoppingCard Component ==
+// == CatalogCard Component ==
 const mapDispatchToProps = {
   putInBasket: (item_index) => putInBasket(item_index),
 };
 
-const ShoppingCard_original = (props) => {
+const CatalogCard_original = (props) => {
   const { index, name, image, text, price } = props;
 
   const handleSelectedItem = (SelectedIndex) => {
@@ -104,7 +104,7 @@ const ShoppingCard_original = (props) => {
 };
 
 // To export the named component while being connected to Redux Store
-export const ShoppingCard = connect(
+export const CatalogCard = connect(
   null,
   mapDispatchToProps
-)(ShoppingCard_original);
+)(CatalogCard_original);
