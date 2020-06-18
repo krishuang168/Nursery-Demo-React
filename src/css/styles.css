@@ -108,6 +108,10 @@ iframe {
   border-color: #a07dd8;
 }
 
+.btn-text-bold {
+  font-weight: bold;
+}
+
 .bold {
   font-weight: bold;
 }

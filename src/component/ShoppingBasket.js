@@ -154,19 +154,26 @@ class ShoppingBasket extends Component {
         <hr />
         <div className="row-content">
           <Row>
-            <Col xs={2} md={6}>
+            <Col xs={2}>
               <Link to="/catalog">
-                <Button className="btn-light ml-auto">Conitnue shopping</Button>
+                <Button className="btn-light btn-text-bold ml-auto">
+                  Conitnue shopping
+                </Button>
               </Link>
-
+            </Col>
+            <Col xs={2}>
               <Button
-                className="btn-warning ml-3"
+                className="btn-warning btn-text-bold ml-3"
                 outline
                 onClick={() => this.emptyBasket()}
               >
                 Empty Basket
               </Button>
-              <Button className="btn-success ml-3">Checkout</Button>
+            </Col>
+            <Col xs={2}>
+              <Button className="btn-success btn-text-bold ml-3">
+                Checkout
+              </Button>
             </Col>
             <Col className="mr-3 right bold">
               Subtotal: ${subtotal.toFixed(2)}
