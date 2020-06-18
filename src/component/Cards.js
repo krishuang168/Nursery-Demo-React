@@ -13,30 +13,30 @@ import {
 } from "reactstrap";
 import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
-export const BigCard = ({ name, image, text }) => {
+export const CategoryCard = ({ name, image, text }) => {
   return (
     <Card sm={2} md={3} className="card">
       <CardHeader style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}>
         <strong>{name}</strong>
       </CardHeader>
       <CardBody>
-        <CardImg src={image} width="3rem" />
+        <CardImg src={image} width="3em" />
         <CardText>{text}</CardText>
       </CardBody>
     </Card>
   );
 };
 
-export const SmallCard = ({ name, image, text }) => {
+export const BasketCard = ({ name, image, text }) => {
   return (
-    <Card className="card card-small">
+    <Card xs={6} sm={4} className="card card-in-basket">
       <CardHeader style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}>
         <strong>{name}</strong>
       </CardHeader>
       <CardBody>
         <Row>
           <Col>
-            <img src={image} alt={name} width="100" />
+            <CardImg src={image} alt={name} width="3em" />
           </Col>
           <Col className="center">{text}</Col>
         </Row>

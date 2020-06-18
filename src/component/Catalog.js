@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
-import { BigCard } from "./Cards";
+import { CategoryCard } from "./Cards";
 
 class Catalog extends Component {
   render() {
@@ -25,7 +25,7 @@ class Catalog extends Component {
               <Row>
                 <Col md={3}>
                   <Link to="/flowers" className="no-underline">
-                    <BigCard
+                    <CategoryCard
                       name="Flowers"
                       image="https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFFOR113-1_medium.jpg"
                     />
@@ -33,7 +33,7 @@ class Catalog extends Component {
                 </Col>
                 <Col md={3}>
                   <Link to="/veggies" className="no-underline">
-                    <BigCard
+                    <CategoryCard
                       name="Vegetables"
                       image="https://www.edenbrothers.com/store/media/Seeds-Vegetables/resized/SVLET120-1_medium.jpg"
                     />
@@ -41,7 +41,7 @@ class Catalog extends Component {
                 </Col>
                 <Col md={3}>
                   <Link to="/herbs" className="no-underline">
-                    <BigCard
+                    <CategoryCard
                       name="Herbs"
                       image="https://www.edenbrothers.com/store/media/Seeds-Herbs/resized/SHPER111-1_medium.jpg"
                     />
@@ -49,7 +49,7 @@ class Catalog extends Component {
                 </Col>
                 <Col md={3}>
                   <Link to="/trees" className="no-underline">
-                    <BigCard
+                    <CategoryCard
                       name="Trees & Bushes"
                       image="https://d3hne3c382ip58.cloudfront.net/resized/400x400/cherry-blossom-festival-tour-and-trips-400X400_1572932637.JPG"
                     />

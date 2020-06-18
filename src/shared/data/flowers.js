@@ -4,7 +4,7 @@ export const FLOWERS = [
     name: "California Poppy (Orange) ",
     botanical: "Eschscholzia californica",
     image:
-      "https://www.planetnatural.com/wp-content/uploads/2012/12/growing-california-poppy1.jpg",
+      "https://cdn11.bigcommerce.com/s-c49b6/images/stencil/1280x1280/products/53/3251/California_Poppy_Orange_Seeds_Eschscholzia_Californica__90988.1448315333.jpg",
     price: 1.99,
   },
   {

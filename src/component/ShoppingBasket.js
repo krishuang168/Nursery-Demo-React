@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Row, Col, Table } from "reactstrap";
 import { connect } from "react-redux";
 import { updateBasket } from "../redux/ActionCreators";
-import { SmallCard } from "./Cards";
+import { BasketCard } from "./Cards";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
 import rearrangeID from "../shared/utility/rearrangeID";
 
@@ -80,7 +80,7 @@ class ShoppingBasket extends Component {
       return (
         <tr key={item.id}>
           <td className="center">
-            <SmallCard
+            <BasketCard
               name={item.name}
               image={item.image}
               text={`$${item.price}`}
@@ -154,14 +154,14 @@ class ShoppingBasket extends Component {
         <hr />
         <div className="row-content">
           <Row>
-            <Col xs={2}>
+            <Col xs={6} sm={4} md={2}>
               <Link to="/catalog">
                 <Button className="btn-light btn-text-bold ml-auto">
                   Conitnue shopping
                 </Button>
               </Link>
             </Col>
-            <Col xs={2}>
+            <Col xs={6} sm={4} md={2}>
               <Button
                 className="btn-warning btn-text-bold ml-3"
                 outline
@@ -170,7 +170,7 @@ class ShoppingBasket extends Component {
                 Empty Basket
               </Button>
             </Col>
-            <Col xs={2}>
+            <Col xs={6} sm={4} md={2}>
               <Button className="btn-success btn-text-bold ml-3">
                 Checkout
               </Button>

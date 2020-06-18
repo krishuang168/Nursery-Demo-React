@@ -27,7 +27,7 @@ a:hover {
 h1 {
   position: relative;
   left: 1rem;
-  font-family:"gisella";
+  font-family: "gisella";
   font-size: 4rem;
   letter-spacing: 5px;
   margin-bottom: 0.3em;
@@ -47,7 +47,7 @@ h2 em {
   position: relative;
   left: 0.1rem;
   bottom: 0.15rem;
-  font-family:"cheddar jack";
+  font-family: "cheddar jack";
   font-size: 1.5rem;
   color: inherit;
   word-spacing: 0.1em;
@@ -63,13 +63,13 @@ h3 {
   position: relative;
   top: 2rem;
   padding-left: 0.5em;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 0rem;
   letter-spacing: 0.2em;
 }
 
 hr {
-  background-color: #764abc
+  background-color: #764abc;
 }
 
 iframe {
@@ -89,9 +89,11 @@ iframe {
 .btn-primary {
   background-color: #764abc;
   border-color: #764abc;
+  margin-bottom: 20px;
 }
 
-.btn-primary:focus, .btn-primary:hover {
+.btn-primary:focus,
+.btn-primary:hover {
   color: inherit;
   background-color: #a07dd8;
   border-color: #a07dd8;
@@ -106,24 +108,25 @@ iframe {
 .btn-light {
   background-color: #a07dd8;
   border-color: #a07dd8;
+  margin-bottom: 20px;
 }
 
 .btn-text-bold {
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .bold {
   font-weight: bold;
 }
 
-
 .card {
   box-shadow: 10px 10px 5px #aaa;
   margin-bottom: 3em;
 }
 
-.card-small {
-  width: 15rem;
+.card-in-basket {
+  width: 20rem;
 }
 
 .center {
@@ -144,7 +147,7 @@ iframe {
   align-items: center;
   justify-content: center;
   background-color: rgba(160, 125, 216, 0.3);
-  border-radius: 5px; 
+  border-radius: 5px;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -168,7 +171,7 @@ iframe {
   justify-self: start;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 .navbar a.active {
@@ -180,7 +183,7 @@ iframe {
   background-color: #d1ffd8;
 }
 
-.no-underline:hover{
+.no-underline:hover {
   text-decoration: none;
 }
 
@@ -192,7 +195,7 @@ iframe {
 
 .row-content {
   padding: 0.5rem 0;
-  min-height: 50px; 
+  min-height: 50px;
 }
 
 .shopping {
@@ -208,7 +211,7 @@ iframe {
 
 .site-footer {
   color: white;
-  background-color: #a79060; 
+  background-color: #a79060;
   background-image: linear-gradient(#a79060, #5c3f3f, black);
 }
 
