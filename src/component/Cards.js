@@ -45,18 +45,18 @@ export const SmallCard = ({ name, image, text }) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return { basket: state.updateBasket };
-};
-
+// == ShoppingCard Component ==
 const mapDispatchToProps = {
   putInBasket: (item_index) => putInBasket(item_index),
 };
 
 const ShoppingCard_original = (props) => {
-  const { name, image, text, price } = props;
-  const itemData = { name, image, price, quantity: 1 };
-  console.log("itemData: " + JSON.stringify(itemData));
+  const { index, name, image, text, price } = props;
+
+  const handleSelectedItem = (SelectedIndex) => {
+    console.log("SelectedIndex: " + JSON.stringify(SelectedIndex));
+    props.putInBasket(SelectedIndex);
+  };
 
   return (
     <Card sm={2} md={4} className="card">
@@ -71,7 +71,7 @@ const ShoppingCard_original = (props) => {
           <Col>
             <Button
               className="right btn-primary"
-              onClick={() => props.putInBasket(itemData)}
+              onClick={() => handleSelectedItem(index)}
             >
               <span className="no-underline" style={{ fontSize: "0.1em" }}>
                 ➜
@@ -105,6 +105,6 @@ const ShoppingCard_original = (props) => {
 
 // To export the named component while being connected to Redux Store
 export const ShoppingCard = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(ShoppingCard_original);
