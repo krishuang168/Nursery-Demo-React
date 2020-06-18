@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Current homepage
 
-https://krishuang168.github.io/Nursery-Demo/
+https://krishuang168.github.io/Nursery-Demo-React/
 
 ## Disclamation
 
