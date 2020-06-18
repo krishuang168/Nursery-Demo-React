@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { updateBasket } from "../redux/ActionCreators";
 import { SmallCard } from "./Cards";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
-import rearrangeID from "../shared/arrayMethods/rearrangeID";
+import rearrangeID from "../shared/utility/rearrangeID";
 
 const mapStateToProps = (state) => {
   return { basket: state.ReduxBasket };
