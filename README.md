@@ -6,7 +6,7 @@ https://krishuang168.github.io/Nursery-Demo-React/
 
 ## Disclamation
 
-### Ongoing work (Jun 13, 2020)
+### Ongoing work (Jun 18, 2020)
 
 Several features are still being built at the time being. Redux is halfway working.
 
