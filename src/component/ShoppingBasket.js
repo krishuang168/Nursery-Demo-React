@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Col, Table } from "reactstrap";
+import { Button, Row, Col, Table } from "reactstrap";
 import { connect } from "react-redux";
 import { updateBasket } from "../redux/ActionCreators";
 import { SmallCard } from "./Cards";
@@ -54,6 +54,12 @@ class ShoppingBasket extends Component {
     });
     // Remove (qunatity == 0) items
     updatedBasket = updatedBasket.filter((item) => item.quantity > 0);
+
+    this.statesUpdate(updatedBasket);
+  };
+
+  emptyBasket = () => {
+    const updatedBasket = new Array(0);
 
     this.statesUpdate(updatedBasket);
   };
@@ -146,14 +152,27 @@ class ShoppingBasket extends Component {
           <tbody>{merchandise}</tbody>
         </Table>
         <hr />
-        <div className="row row-content mr-3 right bold">
-          Subtotal: ${subtotal.toFixed(2)}
-        </div>
         <div className="row-content">
-          <Link to="/catalog">
-            <Button className="btn-light ml-auto">Conitnue shopping</Button>
-          </Link>
-          <Button className="btn-success ml-3">Checkout</Button>
+          <Row>
+            <Col xs={2} md={6}>
+              <Link to="/catalog">
+                <Button className="btn-light ml-auto">Conitnue shopping</Button>
+              </Link>
+
+              <Button
+                className="btn-warning ml-3"
+                outline
+                onClick={() => this.emptyBasket()}
+              >
+                Empty Basket
+              </Button>
+              <Button className="btn-success ml-3">Checkout</Button>
+            </Col>
+            <Col className="mr-3 right bold">
+              Subtotal: ${subtotal.toFixed(2)}
+            </Col>
+          </Row>
+          <div className="row row-content"></div>
         </div>
       </div>
     );
