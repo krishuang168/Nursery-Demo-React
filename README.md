@@ -15,4 +15,17 @@ Several features are still being built at the time being. Redux is halfway worki
 
 All photos were hotlinked to demo the concept of plant or seed sales.
 For educational purposes only. 
-Individual links will be provided later.
+
+#### For details, please check:
+
+Flowers:
+https://github.com/krishuang168/Nursery-Demo-React/blob/master/src/shared/data/flowers.js
+
+Vegetables:
+https://github.com/krishuang168/Nursery-Demo-React/blob/master/src/shared/data/veggies.js
+
+Herbs:
+https://github.com/krishuang168/Nursery-Demo-React/blob/master/src/shared/data/herbs.js
+
+Trees & Bushes:
+https://github.com/krishuang168/Nursery-Demo-React/blob/master/src/shared/data/trees.js
