@@ -7,7 +7,7 @@ import { SmallCard } from "./Cards";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
 
 const mapStateToProps = (state) => {
-  return { basket: state.updateBasket };
+  return { basket: state.ReduxBasket };
 };
 
 const mapDispatchToProps = {

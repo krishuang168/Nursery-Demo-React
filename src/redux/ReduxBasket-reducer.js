@@ -1,7 +1,7 @@
 import { initialBasket } from "../shared/data/InitialBasket";
 import * as ActionTypes from "./ActionTypes";
 
-export const updateBasket = (state = initialBasket, action) => {
+export const ReduxBasket = (state = initialBasket, action) => {
   console.log("STATE is " + JSON.stringify(state));
 
   if (action.type === ActionTypes.UPDATE_BASKET) {
