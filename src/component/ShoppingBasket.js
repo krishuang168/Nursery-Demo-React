@@ -4,6 +4,7 @@ import { Button, Row, Col, Table } from "reactstrap";
 import { connect } from "react-redux";
 import { updateBasket } from "../redux/ActionCreators";
 import { BasketCard } from "./Cards";
+import Checkout from "./Checkout";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
 import rearrangeID from "../shared/utility/rearrangeID";
 
@@ -21,6 +22,7 @@ class ShoppingBasket extends Component {
 
     this.state = {
       basket: this.props.basket,
+      showCheckoutModal: false,
     };
   }
 
@@ -68,6 +70,10 @@ class ShoppingBasket extends Component {
     newBasket = rearrangeID(newBasket);
     this.setState({ basket: newBasket });
     this.props.updateBasket(newBasket);
+  };
+
+  toggleCheckoutModal = () => {
+    this.setState({ showCheckoutModal: true });
   };
 
   render() {
@@ -171,7 +177,10 @@ class ShoppingBasket extends Component {
               </Button>
             </Col>
             <Col xs={6} sm={4} md={2}>
-              <Button className="btn-success btn-text-bold ml-3">
+              <Button
+                className="btn-success btn-text-bold ml-3"
+                onClick={() => this.toggleCheckoutModal()}
+              >
                 Checkout
               </Button>
             </Col>
@@ -180,6 +189,7 @@ class ShoppingBasket extends Component {
             </Col>
           </Row>
           <div className="row row-content"></div>
+          <Checkout show={this.state.showCheckoutModal} subtotal={subtotal} />
         </div>
       </div>
     );
