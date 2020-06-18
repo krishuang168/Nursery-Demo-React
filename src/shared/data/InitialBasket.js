@@ -2,7 +2,9 @@
 export const initialBasket = [
   {
     id: 0,
+    index: "Flower-ForgetMeNot",
     name: "Forget-me-not",
+    botanical: "Myosotis alpestris",
     image:
       "https://www.edenbrothers.com/store/media/Seeds-Flowers/resized/SFFOR113-1_medium.jpg",
     price: 1.99,
@@ -10,10 +12,12 @@ export const initialBasket = [
   },
   {
     id: 1,
-    name: "Purple Shiso",
+    index: "Herb-Shiso-Red",
+    name: "Red Shiso",
+    botanical: "Perilla frutescens var. crispa",
     image:
       "https://www.edenbrothers.com/store/media/Seeds-Herbs/resized/SHPER111-1_medium.jpg",
-    price: 3.99,
+    price: 2.49,
     quantity: 2,
   },
 ];
