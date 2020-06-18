@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { updateBasket } from "../redux/ActionCreators";
 import { SmallCard } from "./Cards";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
+import rearrangeID from "../shared/arrayMethods/rearrangeID";
 
 const mapStateToProps = (state) => {
   return { basket: state.ReduxBasket };
@@ -24,10 +25,9 @@ class ShoppingBasket extends Component {
   }
 
   handleRemove = (e) => {
-    const updatedBasket = this.state.basket.filter((item) => item.id !== e.id);
+    var updatedBasket = this.state.basket.filter((item) => item.id !== e.id);
 
-    this.setState({ basket: updatedBasket });
-    this.props.updateBasket(updatedBasket);
+    this.statesUpdate(updatedBasket);
   };
 
   handlePlusOne = (e) => {
@@ -40,8 +40,7 @@ class ShoppingBasket extends Component {
       return tempArray;
     });
 
-    this.setState({ basket: updatedBasket });
-    this.props.updateBasket(updatedBasket);
+    this.statesUpdate(updatedBasket);
   };
 
   handleMinusOne = (e) => {
@@ -56,14 +55,18 @@ class ShoppingBasket extends Component {
     // Remove (qunatity == 0) items
     updatedBasket = updatedBasket.filter((item) => item.quantity > 0);
 
-    this.setState({ basket: updatedBasket });
-    this.props.updateBasket(updatedBasket);
+    this.statesUpdate(updatedBasket);
+  };
+
+  statesUpdate = (newBasket) => {
+    newBasket = rearrangeID(newBasket);
+    this.setState({ basket: newBasket });
+    this.props.updateBasket(newBasket);
   };
 
   render() {
     var subtotal = 0;
     const basket = this.state.basket; // To avoid touch the state directly
-    console.log("Basket is " + JSON.stringify(basket));
 
     const merchandise = basket.map((item) => {
       subtotal += item.price * item.quantity;

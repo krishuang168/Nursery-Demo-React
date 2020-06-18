@@ -1,12 +1,12 @@
 import * as ActionTypes from "./ActionTypes";
 
 export const ReduxBasket = (state = [], action) => {
-  console.log("STATE is " + JSON.stringify(state));
+  // console.log("STATE is " + JSON.stringify(state));
 
   switch (action.type) {
     case ActionTypes.UPDATE_BASKET: {
       const newState = action.payload;
-      console.log(" NEW STATE is " + JSON.stringify(newState));
+      // console.log(" NEW STATE is " + JSON.stringify(newState));
 
       return newState;
     }
@@ -16,12 +16,12 @@ export const ReduxBasket = (state = [], action) => {
       }
       const newItem = {
         ...action.payload,
-        id: state ? state.length : 0,
+        id: state.length,
         quantity: 1,
       };
 
       const newState = state.concat(newItem);
-      console.log(" NEW STATE is " + JSON.stringify(newState));
+      // console.log(" NEW STATE is " + JSON.stringify(newState));
 
       return newState;
     }
