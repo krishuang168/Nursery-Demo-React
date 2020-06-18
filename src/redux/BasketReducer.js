@@ -1,29 +1,35 @@
 import * as ActionTypes from "./ActionTypes";
 
 export const ReduxBasket = (state = [], action) => {
-  // console.log("STATE is " + JSON.stringify(state));
-
   switch (action.type) {
     case ActionTypes.UPDATE_BASKET: {
       const newState = action.payload;
-      // console.log(" NEW STATE is " + JSON.stringify(newState));
 
       return newState;
     }
     case ActionTypes.PUT_IN_BASKET: {
+      // Checking...
       if (!state) {
         state = new Array(0);
       }
-      const newItem = {
-        ...action.payload,
-        id: state.length,
-        quantity: 1,
-      };
+      const itemExisting = state.filter(
+        (item) => item.index === action.payload.index
+      )[0];
+      // End of checking
 
-      const newState = state.concat(newItem);
-      // console.log(" NEW STATE is " + JSON.stringify(newState));
+      if (itemExisting) {
+        alert("This item is in your shopping basket already!");
+      } else {
+        const newItem = {
+          ...action.payload,
+          id: state.length,
+          quantity: 1,
+        };
 
-      return newState;
+        const newState = state.concat(newItem);
+
+        return newState;
+      }
     }
     default:
       return state;
