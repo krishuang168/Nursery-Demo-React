@@ -6,7 +6,7 @@ https://krishuang168.github.io/Nursery-Demo-React/
 
 ## Disclamation
 
-### Ongoing work (Jun 18, 2020)
+### Current Status (Jun 18, 2020)
 
 The Basic structure of the website is complete.
 Minor improvements will be carried out in the future.
