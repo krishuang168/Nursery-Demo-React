@@ -1,4 +1,3 @@
-import { initialBasket } from "../shared/data/InitialBasket";
 import * as ActionTypes from "./ActionTypes";
 
 export const ReduxBasket = (state = [], action) => {

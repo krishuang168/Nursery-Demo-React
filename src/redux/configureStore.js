@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from "redux";
-import { ReduxBasket } from "./ReduxBasket-reducer";
+import { ReduxBasket } from "./BasketReducer";
 
 export const ConfigureStore = () => {
   const store = createStore(
