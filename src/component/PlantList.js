@@ -7,6 +7,7 @@ const PlantList = ({ plantsData }) => {
     <Col xs={12} sm={6} md={4} key={item.index}>
       <ShoppingCard
         className="shopping"
+        index={item.index}
         name={item.name}
         image={item.image}
         text={item.botanical}
