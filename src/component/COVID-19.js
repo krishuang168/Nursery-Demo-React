@@ -20,7 +20,7 @@ function Covid19Announcement() {
                   </Col>
                 </Row>
                 <Row>
-                  <Col>May 21, 2020</Col>
+                  <Col>Jun 1, 2020</Col>
                 </Row>
                 <hr />
                 <Row>

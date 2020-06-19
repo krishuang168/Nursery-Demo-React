@@ -25,7 +25,7 @@ class About extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col>May 1, 2020</Col>
+                <Col>Jun 1, 2020</Col>
               </Row>
               <hr />
               <Row>
