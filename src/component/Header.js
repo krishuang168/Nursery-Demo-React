@@ -1,46 +1,76 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col, Row, Navbar, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../shared/svg/logo.svg";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
+
+const MyNavbar = () => {
+  return (
+    <Nav className="navbar">
+      <Col xs={12} md={2}>
+        <NavLink to="/home" aria-current="page">
+          Home
+        </NavLink>
+      </Col>
+      <Col xs={12} md={2}>
+        <NavLink to="/about_us" aria-current="page">
+          About Us
+        </NavLink>
+      </Col>
+      <Col xs={12} md={2}>
+        <NavLink to="/contact_us" aria-current="page">
+          Contact Us
+        </NavLink>
+      </Col>
+      <Col xs={12} md={2}>
+        <NavLink to="/catalog" aria-current="page">
+          Online Purchase
+        </NavLink>
+      </Col>
+      <Col xs={12} md={2}>
+        <NavLink to="/shopping_basket" aria-current="page">
+          <img
+            src={shoppingBasket}
+            title="Shopping Basket"
+            alt="Shopping Basket"
+            width="25"
+          />
+        </NavLink>
+      </Col>
+      <Col xs={12} md={2}>
+        <NavLink to="/covid-19" id="covid-19" aria-current="page">
+          COVID-19
+        </NavLink>
+      </Col>
+    </Nav>
+  );
+};
 
 function Header() {
   return (
     <React.Fragment>
       <Row>
-        <Col xs={4} md={2}>
+        <Col xs={0} md={2}>
           <Link to="/home">
-            <img src={logo} alt="Logo" className="logo-big" />
+            <img src={logo} alt="Logo" className="logo-big d-none d-md-block" />
           </Link>
         </Col>
+        <Col xs={12} md={10}>
+          <h1 id="title">Cottage Lake Nursery</h1>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={0} md={2} />
         <Col>
           <Row>
-            <Col xs={6} sm={10}>
-              <h1 className="title">Cottage Lake Nursery</h1>
-            </Col>
-            <Row>
-              <h2 className="subtitle row-content">
-                Established in 2020, we aim to provide <em>quality seeds</em> &
-                <em>plantlings</em> in the Pacific Northwest.
-              </h2>
-            </Row>
-            <Col className="navbar mr-5">
-              <NavLink to="/home">Home</NavLink>
-              <NavLink to="/about_us">About Us</NavLink>
-              <NavLink to="/contact_us">Contact Us</NavLink>
-              <NavLink to="/catalog">Online Purchase</NavLink>
-              <NavLink to="/shopping_basket">
-                <img
-                  src={shoppingBasket}
-                  title="Shopping Basket"
-                  alt="Shopping Basket"
-                  width="25"
-                />
-              </NavLink>
-              <NavLink to="/covid-19" id="covid-19">
-                COVID-19
-              </NavLink>
-            </Col>
+            <h2 id="subtitle">
+              Established in 2020, we aim to provide <em>quality seeds</em> &
+              <em>plantlings</em> in the Pacific Northwest.
+            </h2>
+          </Row>
+          <Row xs={8} md={10}>
+            <MyNavbar />
           </Row>
         </Col>
       </Row>
