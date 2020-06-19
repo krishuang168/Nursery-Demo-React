@@ -4,6 +4,7 @@ import Header from "./Header";
 import Catalog from "./Catalog";
 import { Flowers, Veggies, Herbs, Trees } from "./PlantCategories";
 import ShoppingBasket from "./ShoppingBasket";
+import Social from "./Social";
 import Footer from "./Footer";
 import About from "./About";
 import Contact from "./Contact";
@@ -19,6 +20,7 @@ class Main extends Component {
     return (
       <div>
         <Header />
+        <Social />
         {/* Subpages */}
         <Switch>
           <Route path="/home" component={HomePage} />
@@ -36,6 +38,7 @@ class Main extends Component {
           <Route exact path="/covid-19" component={Covid19Announcement} />
           <Redirect to="/home" />
         </Switch>
+
         <Footer />
       </div>
     );

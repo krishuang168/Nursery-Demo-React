@@ -212,6 +212,16 @@ iframe {
   text-decoration: none;
 }
 
+.social {
+  width: 60px;
+  height: 60px;
+  display: flexbox;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: -1;
+  margin-left: 1em;
+}
+
 .text-dark {
   color: #764abc;
 }
