@@ -7,13 +7,13 @@
 /* Dark-green: #60a060 */
 
 @font-face {
-  font-family: 'Cheddar Jack';
-  src: local('cheddar jack'), url(../shared/cheddar\ jack.ttf) format('ttf');
+  font-family: "Cheddar Jack";
+  src: local("cheddar jack"), url(../shared/cheddar\ jack.ttf) format("ttf");
 }
 
 @font-face {
-  font-family: 'Gisella Demo';
-  src: local('gisella'), url(../shared/Gisella\ Demo.ttf) format('otf');
+  font-family: "Gisella Demo";
+  src: local("gisella"), url(../shared/Gisella\ Demo.ttf) format("otf");
 }
 
 a {
@@ -24,15 +24,7 @@ a:hover {
   color: inherit;
 }
 
-h1 {
-  position: relative;
-  left: 1rem;
-  font-family: "gisella";
-  font-size: 4rem;
-  letter-spacing: 5px;
-  margin-bottom: 0.3em;
-  color: #764abc;
-}
+
 
 h2 {
   position: relative;
@@ -129,16 +121,16 @@ iframe {
   width: 20rem;
 }
 
+.card-header {
+  display: block;
+  font-size: 0.9rem;
+}
+
 .center {
   text-align: center;
   vertical-align: middle;
   align-items: center;
   justify-content: center;
-}
-
-.card-header {
-  display: block;
-  font-size: 0.9rem;
 }
 
 .main {
@@ -163,6 +155,8 @@ iframe {
   justify-content: left;
   align-self: baseline;
   text-align: left;
+  background-color: rgb(244, 233, 252, .5);
+  box-shadow: 2px 2px 5px #ddd;
 }
 
 .navbar a {
@@ -220,7 +214,21 @@ iframe {
   text-decoration: none;
 }
 
+.subtitle {
+  text-align: left;
+}
+
 .text-dark {
+  color: #764abc;
+}
+
+.title {
+  position: relative;
+  left: 1rem;
+  font-family: "gisella";
+  font-size: 4rem;
+  letter-spacing: 5px;
+  margin-bottom: 0.3em;
   color: #764abc;
 }
 
@@ -255,7 +263,7 @@ iframe {
 @keyframes growing {
   0% {
     width: 0;
-    height: -60;
+    height: -50;
   }
   100% {
     width: 30;
