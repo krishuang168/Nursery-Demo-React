@@ -9,14 +9,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Covid19Announcement from "./COVID-19";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
-import { connect } from "react-redux";
 
-const mapStateToProps = (state) => {
-  return {
-    basket: [],
-    total: 0,
-  };
-};
+
 
 class Main extends Component {
   render() {
@@ -50,4 +44,4 @@ class Main extends Component {
   } // End of render()
 } // End of the Main Component
 
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(Main);
