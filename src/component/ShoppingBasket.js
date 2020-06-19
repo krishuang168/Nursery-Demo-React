@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button, Row, Col, Table } from "reactstrap";
 import { connect } from "react-redux";
-import { updateBasket } from "../redux/ActionCreators";
+import { updateBasket, openCheckout } from "../redux/ActionCreators";
 import { BasketCard } from "./Cards";
 import Checkout from "./Checkout";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
@@ -14,6 +14,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   updateBasket: (basket) => updateBasket(basket),
+  openCheckout: () => openCheckout(),
 };
 
 class ShoppingBasket extends Component {
@@ -72,9 +73,9 @@ class ShoppingBasket extends Component {
     this.props.updateBasket(newBasket);
   };
 
-  toggleCheckoutModal = () => {
-    this.setState({ showCheckoutModal: true });
-  };
+  // toggleCheckoutModal = () => {
+  //   this.setState({ showCheckoutModal: true });
+  // };
 
   render() {
     var subtotal = 0;
@@ -179,7 +180,7 @@ class ShoppingBasket extends Component {
             <Col xs={6} sm={4} md={2}>
               <Button
                 className="btn-success btn-text-bold ml-3"
-                onClick={() => this.toggleCheckoutModal()}
+                onClick={() => this.props.openCheckout()}
               >
                 Checkout
               </Button>
@@ -189,7 +190,7 @@ class ShoppingBasket extends Component {
             </Col>
           </Row>
           <div className="row row-content"></div>
-          <Checkout show={this.state.showCheckoutModal} subtotal={subtotal} />
+          <Checkout subtotal={subtotal} />
         </div>
       </div>
     );

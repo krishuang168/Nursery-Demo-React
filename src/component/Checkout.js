@@ -1,12 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Modal, Image, Form } from "react-bootstrap";
+import { connect } from "react-redux";
+import {
+  openCheckout,
+  closeCheckout,
+  updateBasket,
+} from "../redux/ActionCreators";
 
+const mapStateToProps = (state) => {
+  return {
+    show: state.CheckoutModal,
+  };
+};
+
+const mapDispatchToProps = {
+  openCheckout: () => openCheckout(),
+  closeCheckout: () => closeCheckout(),
+  updateBasket: (basket) => updateBasket(basket),
+};
+
+// == Checkout Component ==
 function Checkout(props) {
+  const [delivery, setDelivery] = useState(false);
   const { subtotal, show } = props;
 
   const taxRate = 0.1;
-  const deliveryFee = subtotal !== 0 ? 7.99 : 0;
+  const deliveryFee = delivery ? (subtotal ? 7.99 : 0) : 0;
   const total = subtotal * (1 + taxRate) + deliveryFee;
+
+  // Determine Delivery from Checkbox is checked or not
+  const determineDelivery = (evt) => {
+    setDelivery(evt.target.checked);
+    if (subtotal === 0) alert("You have to put something in the basket!");
+  };
+
+  const handleOrder = (total) => {
+    const emptyBasket = new Array(0);
+
+    props.closeCheckout();
+    total === 0
+      ? alert("Your basket is empty.")
+      : alert("We have received your order.");
+    props.updateBasket(emptyBasket);
+  };
 
   return (
     <Modal show={show} size="lg" centered>
@@ -16,9 +52,12 @@ function Checkout(props) {
       <Modal.Body>
         <p>Subtotal: {`$${subtotal}`}</p>
         <p>Sales Tax: {`${taxRate * 100}%`}</p>
-        <p>Delivery Fee: {`$${deliveryFee}`} </p>
+        <input type="checkbox" onChange={(evt) => determineDelivery(evt)} />
+        {` Delivery: $${deliveryFee}`}
         <hr />
-        Your total is <strong>{`$${total.toFixed(2)}`}</strong>
+        <strong className="row row-content ml-1">
+          Your total is {`$${total.toFixed(2)}`}
+        </strong>
         <p>
           <Image
             src={
@@ -68,19 +107,24 @@ function Checkout(props) {
             <Form.Control type="number" placeholder="Phone Number" />
           </Form.Group>
           <Form.Group controlId="email">
-            <Form.Label>Physical Address</Form.Label>
+            <Form.Label>Email Address</Form.Label>
             <Form.Control type="email" placeholder="E-mail" />
           </Form.Group>
           <Form.Group controlId="RememberBuyer">
-            <Form.Check type="checkbox" label="Remember My Info" />
+            <Form.Check type="checkbox" label="Save for later use" />
           </Form.Group>
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button>Place Order</Button>
+        <Button className="btn-light" onClick={() => props.closeCheckout()}>
+          Later
+        </Button>
+        <Button className="btn-primary" onClick={() => handleOrder(total)}>
+          Place Order
+        </Button>
       </Modal.Footer>
     </Modal>
   );
 }
 
-export default Checkout;
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);
