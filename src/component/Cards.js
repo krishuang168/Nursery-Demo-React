@@ -13,9 +13,11 @@ import {
 } from "reactstrap";
 import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
+// == CategoryCard Component ==
+// rendered in the Catalog.js
 export const CategoryCard = ({ name, image, text }) => {
   return (
-    <Card sm={2} md={3} className="card">
+    <Card className="card">
       <CardHeader style={{ backgroundColor: "#c3a0e5", textAlign: "center" }}>
         <strong>{name}</strong>
       </CardHeader>
@@ -46,6 +48,7 @@ export const BasketCard = ({ name, image, text }) => {
 };
 
 // == CatalogCard Component ==
+// rendered in the PlantList.js
 const mapDispatchToProps = {
   putInBasket: (item_index) => putInBasket(item_index),
 };

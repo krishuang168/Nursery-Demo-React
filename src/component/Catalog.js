@@ -23,7 +23,7 @@ class Catalog extends Component {
               </Row>
               <hr />
               <Row>
-                <Col md={3}>
+                <Col sm={6} lg={3}>
                   <Link to="/flowers" className="no-underline">
                     <CategoryCard
                       name="Flowers"
@@ -31,7 +31,7 @@ class Catalog extends Component {
                     />
                   </Link>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} lg={3}>
                   <Link to="/veggies" className="no-underline">
                     <CategoryCard
                       name="Vegetables"
@@ -39,7 +39,7 @@ class Catalog extends Component {
                     />
                   </Link>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} lg={3}>
                   <Link to="/herbs" className="no-underline">
                     <CategoryCard
                       name="Herbs"
@@ -47,7 +47,7 @@ class Catalog extends Component {
                     />
                   </Link>
                 </Col>
-                <Col md={3}>
+                <Col sm={6} lg={3}>
                   <Link to="/trees" className="no-underline">
                     <CategoryCard
                       name="Trees & Bushes"
