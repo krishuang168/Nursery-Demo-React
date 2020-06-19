@@ -6,12 +6,14 @@ const Social = () => {
     <div
       id="social"
       className="mr-3"
-      sticky="bottom"
       style={{
         display: "flex",
         flexDirection: "column",
         float: "right",
-        marginTop: "5%",
+        marginTop: "2%",
+        position: "-webkit-sticky",
+        position: "sticky",
+        top: "2em",
       }}
     >
       {/* Facebook */}
