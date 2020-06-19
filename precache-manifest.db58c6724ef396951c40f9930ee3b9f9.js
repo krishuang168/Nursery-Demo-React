@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e41b0feb3be780c796cfd188f42ea71d",
+    "revision": "e3f72f59bb9e8445eccfb1ecaf218056",
     "url": "/Nursery-Demo-React/index.html"
   },
   {
-    "revision": "0852ce285aa3ed6a9eac",
+    "revision": "5cdc1e2d2b58b36b45d4",
     "url": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css"
   },
   {
-    "revision": "5255ee6741dd49fb5e3b",
-    "url": "/Nursery-Demo-React/static/css/main.4e3fdc0c.chunk.css"
+    "revision": "49f5113d38b85b3ab125",
+    "url": "/Nursery-Demo-React/static/css/main.d6389cfa.chunk.css"
   },
   {
-    "revision": "0852ce285aa3ed6a9eac",
-    "url": "/Nursery-Demo-React/static/js/2.6b2c86b0.chunk.js"
+    "revision": "5cdc1e2d2b58b36b45d4",
+    "url": "/Nursery-Demo-React/static/js/2.b82ef175.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Nursery-Demo-React/static/js/2.6b2c86b0.chunk.js.LICENSE.txt"
+    "url": "/Nursery-Demo-React/static/js/2.b82ef175.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5255ee6741dd49fb5e3b",
-    "url": "/Nursery-Demo-React/static/js/main.ab39fb53.chunk.js"
+    "revision": "49f5113d38b85b3ab125",
+    "url": "/Nursery-Demo-React/static/js/main.d26b5af9.chunk.js"
   },
   {
     "revision": "35ab08c363dca2365e23",
@@ -56,12 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nursery-Demo-React/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "5e90f24ab50f46f76a4670201e60b6a7",
-    "url": "/Nursery-Demo-React/static/media/logo.5e90f24a.svg"
+    "revision": "1a4e19291cceb5a9cd62e7ecb250a363",
+    "url": "/Nursery-Demo-React/static/media/logo.1a4e1929.svg"
   },
   {
-    "revision": "07fff5186b5824a1bca8ae621ca715ae",
-    "url": "/Nursery-Demo-React/static/media/shoppingBasket.07fff518.svg"
+    "revision": "abc84f7329fa2d4c10d4f7ce1ba6d6a3",
+    "url": "/Nursery-Demo-React/static/media/shoppingBasket.abc84f73.svg"
   },
   {
     "revision": "78c6b04ab065b124b69deaf324f95cc7",
