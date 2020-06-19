@@ -73,10 +73,6 @@ class ShoppingBasket extends Component {
     this.props.updateBasket(newBasket);
   };
 
-  // toggleCheckoutModal = () => {
-  //   this.setState({ showCheckoutModal: true });
-  // };
-
   render() {
     var subtotal = 0;
     const basket = this.state.basket; // To avoid touch the state directly
