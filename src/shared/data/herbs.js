@@ -59,7 +59,7 @@ export const HERBS = [
     name: "[TCM] Banxia",
     botanical: "Pinellia ternata",
     image:
-      "https://nova.co.at/marsNova/Thumbnail?oid=8566586&version=-2&thumbnailVersion=3",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pinellia_ternata_5.JPG",
     price: 9.99,
   },
   {
