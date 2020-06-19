@@ -10,8 +10,6 @@ import Contact from "./Contact";
 import Covid19Announcement from "./COVID-19";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
-
-
 class Main extends Component {
   render() {
     const HomePage = () => {
