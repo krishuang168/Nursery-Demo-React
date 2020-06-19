@@ -204,7 +204,8 @@ iframe {
 .site-footer {
   color: white;
   background-color: #a79060;
-  background-image: linear-gradient(#a79060, #5c3f3f, black);
+  background-image: linear-gradient(#a79060, #5c3f3f, #000);
+  box-shadow: 0 50vh 0 50vh #000;
 }
 
 .site-footer a {

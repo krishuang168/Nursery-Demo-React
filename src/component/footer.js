@@ -1,6 +1,8 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "font-awesome/css/font-awesome.css";
+import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
 function Footer(props) {
   return (
@@ -19,46 +21,30 @@ function Footer(props) {
               <li>
                 <Link to="/contact_us">Contact Us</Link>
               </li>
+            </ul>
+          </div>
+          <div className="col-4 col-sm-2 offset-1">
+            <h5>Shopping</h5>
+            <ul className="list-unstyled">
               <li>
                 <Link to="/catalog">Online Purchase</Link>
               </li>
+              <li>
+                <Link to="/shopping_basket">
+                  Shopping Basket <Image src={shoppingBasket} style={{marginTop: -5}} />
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="col-6 col-sm-3 text-center">
-            <h5>Social</h5>
-            <a
-              className="btn btn-social-icon btn-instagram"
-              href="http://instagram.com/"
-            >
-              <i className="fa fa-instagram" />
-            </a>
-            <a
-              className="btn btn-social-icon btn-facebook"
-              href="http://www.facebook.com/"
-            >
-              <i className="fa fa-facebook" />
-            </a>
-            <a
-              className="btn btn-social-icon btn-twitter"
-              href="http://twitter.com/"
-            >
-              <i className="fa fa-twitter" />
-            </a>
-            <a
-              className="btn btn-social-icon btn-google"
-              href="http://youtube.com/"
-            >
-              <i className="fa fa-youtube" />
-            </a>
-          </div>
-          <div className="col-sm-4 text-center">
-            <a role="button" className="btn btn-link" href="tel:+142542658778">
+          <div className="col-6 col-sm-4 offset-2">
+            <h5>Contact</h5>
+            <a role="button" className="btn-link" href="tel:+142542658778">
               <i className="fa fa-phone" /> +1-(425)-426-8778
             </a>
             <br />
             <a
               role="button"
-              className="btn btn-link"
+              className="btn-link"
               href="mailto:notreal@notreal.co"
             >
               <i className="fa fa-envelope-o" /> contact@cottagelakenursery.com
