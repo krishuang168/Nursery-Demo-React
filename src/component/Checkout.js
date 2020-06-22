@@ -42,6 +42,8 @@ function Checkout(props) {
       ? alert("Your basket is empty.")
       : alert("We have received your order.");
     props.updateBasket(emptyBasket);
+
+    window.location.reload(false); // Refresh Page to see the updated empty basket
   };
 
   return (
