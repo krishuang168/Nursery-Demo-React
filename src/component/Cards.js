@@ -57,7 +57,6 @@ const CatalogCard_original = (props) => {
   const { index, name, image, text, price } = props;
 
   const handleSelectedItem = (SelectedIndex) => {
-    console.log("SelectedIndex: " + JSON.stringify(SelectedIndex));
     props.putInBasket(SelectedIndex);
   };
 

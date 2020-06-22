@@ -35,8 +35,7 @@ class FeedbackForm extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Current state is: " + JSON.stringify(values));
-    alert("Current state is: " + JSON.stringify(values));
+    alert("Your input includes: " + JSON.stringify(values));
   }
 
   render() {

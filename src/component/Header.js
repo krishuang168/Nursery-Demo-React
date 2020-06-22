@@ -11,7 +11,6 @@ const mapStateToProps = (state) => {
 };
 
 const MyNavbar = ({ basket }) => {
-  console.log("Basket: " + JSON.stringify(basket.length));
   return (
     <Nav className="navbar">
       <Col xs={12} md={2}>
