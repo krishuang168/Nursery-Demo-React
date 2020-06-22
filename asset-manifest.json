@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/Nursery-Demo-React/static/css/main.a7603e37.chunk.css",
-    "main.js": "/Nursery-Demo-React/static/js/main.c71b45dc.chunk.js",
-    "main.js.map": "/Nursery-Demo-React/static/js/main.c71b45dc.chunk.js.map",
+    "main.css": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css",
+    "main.js": "/Nursery-Demo-React/static/js/main.62113f4f.chunk.js",
+    "main.js.map": "/Nursery-Demo-React/static/js/main.62113f4f.chunk.js.map",
     "runtime-main.js": "/Nursery-Demo-React/static/js/runtime-main.0cb5d659.js",
     "runtime-main.js.map": "/Nursery-Demo-React/static/js/runtime-main.0cb5d659.js.map",
     "static/css/2.8b9254be.chunk.css": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css",
-    "static/js/2.a0fe6593.chunk.js": "/Nursery-Demo-React/static/js/2.a0fe6593.chunk.js",
-    "static/js/2.a0fe6593.chunk.js.map": "/Nursery-Demo-React/static/js/2.a0fe6593.chunk.js.map",
+    "static/js/2.f6413e6a.chunk.js": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js",
+    "static/js/2.f6413e6a.chunk.js.map": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js.map",
     "index.html": "/Nursery-Demo-React/index.html",
-    "precache-manifest.e078afca48debb2ed20aa43c784aa95b.js": "/Nursery-Demo-React/precache-manifest.e078afca48debb2ed20aa43c784aa95b.js",
+    "precache-manifest.f27a08ac1676ab271ad2a1bd4e40f618.js": "/Nursery-Demo-React/precache-manifest.f27a08ac1676ab271ad2a1bd4e40f618.js",
     "service-worker.js": "/Nursery-Demo-React/service-worker.js",
     "static/css/2.8b9254be.chunk.css.map": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css.map",
-    "static/css/main.a7603e37.chunk.css.map": "/Nursery-Demo-React/static/css/main.a7603e37.chunk.css.map",
-    "static/js/2.a0fe6593.chunk.js.LICENSE.txt": "/Nursery-Demo-React/static/js/2.a0fe6593.chunk.js.LICENSE.txt",
+    "static/css/main.ce27810f.chunk.css.map": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css.map",
+    "static/js/2.f6413e6a.chunk.js.LICENSE.txt": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/Nursery-Demo-React/static/media/cheddar jack.862c8330.ttf",
     "static/media/font-awesome.css": "/Nursery-Demo-React/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/logo.svg": "/Nursery-Demo-React/static/media/logo.1a4e1929.svg",
-    "static/media/shoppingBasket.svg": "/Nursery-Demo-React/static/media/shoppingBasket.abc84f73.svg",
-    "static/media/shoppingBasketWhite.svg": "/Nursery-Demo-React/static/media/shoppingBasketWhite.78c6b04a.svg",
+    "static/media/shoppingBasket.svg": "/Nursery-Demo-React/static/media/shoppingBasket.3ef48243.svg",
+    "static/media/shoppingBasketWhite.svg": "/Nursery-Demo-React/static/media/shoppingBasketWhite.ffedaced.svg",
+    "static/media/shoppingBasketWithFlowers.svg": "/Nursery-Demo-React/static/media/shoppingBasketWithFlowers.bb2acf47.svg",
     "static/media/sideDeco.svg": "/Nursery-Demo-React/static/media/sideDeco.4fb2c2ea.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0cb5d659.js",
     "static/css/2.8b9254be.chunk.css",
-    "static/js/2.a0fe6593.chunk.js",
-    "static/css/main.a7603e37.chunk.css",
-    "static/js/main.c71b45dc.chunk.js"
+    "static/js/2.f6413e6a.chunk.js",
+    "static/css/main.ce27810f.chunk.css",
+    "static/js/main.62113f4f.chunk.js"
   ]
 }

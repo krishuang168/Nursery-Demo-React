@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d71db4de017ce7da2af021bbfcd4b7b",
+    "revision": "117c3aab5ecdd48d43a5e0e4ccc74f54",
     "url": "/Nursery-Demo-React/index.html"
   },
   {
-    "revision": "49c3b74013ade9d12919",
+    "revision": "b6a162aa6ca7866e3f54",
     "url": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css"
   },
   {
-    "revision": "aa97654f39121bd2f6cf",
-    "url": "/Nursery-Demo-React/static/css/main.a7603e37.chunk.css"
+    "revision": "24e9748e0061ece91c7e",
+    "url": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css"
   },
   {
-    "revision": "49c3b74013ade9d12919",
-    "url": "/Nursery-Demo-React/static/js/2.a0fe6593.chunk.js"
+    "revision": "b6a162aa6ca7866e3f54",
+    "url": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/Nursery-Demo-React/static/js/2.a0fe6593.chunk.js.LICENSE.txt"
+    "url": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aa97654f39121bd2f6cf",
-    "url": "/Nursery-Demo-React/static/js/main.c71b45dc.chunk.js"
+    "revision": "24e9748e0061ece91c7e",
+    "url": "/Nursery-Demo-React/static/js/main.62113f4f.chunk.js"
   },
   {
     "revision": "35ab08c363dca2365e23",
@@ -60,12 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nursery-Demo-React/static/media/logo.1a4e1929.svg"
   },
   {
-    "revision": "abc84f7329fa2d4c10d4f7ce1ba6d6a3",
-    "url": "/Nursery-Demo-React/static/media/shoppingBasket.abc84f73.svg"
+    "revision": "3ef482437c988cdbb1058b89e3c9662c",
+    "url": "/Nursery-Demo-React/static/media/shoppingBasket.3ef48243.svg"
   },
   {
-    "revision": "78c6b04ab065b124b69deaf324f95cc7",
-    "url": "/Nursery-Demo-React/static/media/shoppingBasketWhite.78c6b04a.svg"
+    "revision": "ffedaced5af7693ecc4baa8f83f07204",
+    "url": "/Nursery-Demo-React/static/media/shoppingBasketWhite.ffedaced.svg"
+  },
+  {
+    "revision": "bb2acf47beaa4f42fb85bcdfb7eb427f",
+    "url": "/Nursery-Demo-React/static/media/shoppingBasketWithFlowers.bb2acf47.svg"
   },
   {
     "revision": "4fb2c2eac0830f074cf867065a086881",
