@@ -1,10 +1,17 @@
 import React from "react";
 import { Col, Row, Navbar, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 import logo from "../shared/svg/logo.svg";
 import shoppingBasket from "../shared/svg/shoppingBasket.svg";
+import shoppingBasketWithFlowers from "../shared/svg/shoppingBasketWithFlowers.svg";
 
-const MyNavbar = () => {
+const mapStateToProps = (state) => {
+  return { basket: state.ReduxBasket };
+};
+
+const MyNavbar = ({ basket }) => {
+  console.log("Basket: " + JSON.stringify(basket.length));
   return (
     <Nav className="navbar">
       <Col xs={12} md={2}>
@@ -30,11 +37,12 @@ const MyNavbar = () => {
       <Col xs={12} md={2}>
         <NavLink to="/shopping_basket" aria-current="page">
           <img
-            src={shoppingBasket}
+            src={basket.length > 0 ? shoppingBasketWithFlowers : shoppingBasket}
             title="Shopping Basket"
             alt="Shopping Basket"
-            width="25"
+            id="shopping-basket"
           />
+          <p>{basket ? "" : JSON.stringify(basket.length)}</p>
         </NavLink>
       </Col>
       <Col xs={12} md={2}>
@@ -46,7 +54,7 @@ const MyNavbar = () => {
   );
 };
 
-function Header() {
+function Header(props) {
   return (
     <React.Fragment>
       <Row>
@@ -70,7 +78,7 @@ function Header() {
             </h2>
           </Row>
           <Row xs={8} md={10}>
-            <MyNavbar />
+            <MyNavbar basket={props.basket} />
           </Row>
         </Col>
       </Row>
@@ -78,4 +86,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default connect(mapStateToProps)(Header);

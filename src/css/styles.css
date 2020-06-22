@@ -278,6 +278,11 @@ iframe {
   margin-bottom: 2rem;
 }
 
+#shopping-basket {
+  margin-top: 0.5rem;
+  height: 2.5rem;
+}
+
 #subtitle {
   text-align: left;
   margin-left: 3rem;
