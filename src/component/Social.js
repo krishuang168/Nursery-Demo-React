@@ -25,7 +25,7 @@ const Social = () => {
       </a>
 
       {/* Line */}
-      <a href="https://line.com" target="_blank">
+      <a href="https://line.me" target="_blank">
         <Image
           src="https://img.icons8.com/color/96/000000/line-me.png"
           className="social"

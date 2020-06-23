@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Navbar, Nav } from "react-bootstrap";
+import { Col, Row, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import logo from "../shared/svg/logo.svg";

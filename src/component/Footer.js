@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "font-awesome/css/font-awesome.css";
 import shoppingBasket from "../shared/svg/shoppingBasketWhite.svg";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
@@ -31,7 +31,8 @@ function Footer(props) {
               </li>
               <li>
                 <Link to="/shopping_basket">
-                  Shopping Basket <Image src={shoppingBasket} style={{marginTop: -5}} />
+                  Shopping Basket{" "}
+                  <Image src={shoppingBasket} style={{ marginTop: -5 }} />
                 </Link>
               </li>
             </ul>
