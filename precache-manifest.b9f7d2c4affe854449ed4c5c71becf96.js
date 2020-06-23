@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f44e45f92e2089847197550240341e1b",
+    "revision": "57e54452a52db8ada2c4210fd3b7fe14",
     "url": "/Nursery-Demo-React/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css"
   },
   {
-    "revision": "bb34ab0b85e17c798e73",
+    "revision": "1181100fb35a4aae9df9",
     "url": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb34ab0b85e17c798e73",
-    "url": "/Nursery-Demo-React/static/js/main.2479cc4d.chunk.js"
+    "revision": "1181100fb35a4aae9df9",
+    "url": "/Nursery-Demo-React/static/js/main.50d4f758.chunk.js"
   },
   {
     "revision": "35ab08c363dca2365e23",

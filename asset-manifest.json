@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css",
-    "main.js": "/Nursery-Demo-React/static/js/main.2479cc4d.chunk.js",
-    "main.js.map": "/Nursery-Demo-React/static/js/main.2479cc4d.chunk.js.map",
+    "main.js": "/Nursery-Demo-React/static/js/main.50d4f758.chunk.js",
+    "main.js.map": "/Nursery-Demo-React/static/js/main.50d4f758.chunk.js.map",
     "runtime-main.js": "/Nursery-Demo-React/static/js/runtime-main.0cb5d659.js",
     "runtime-main.js.map": "/Nursery-Demo-React/static/js/runtime-main.0cb5d659.js.map",
     "static/css/2.8b9254be.chunk.css": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css",
     "static/js/2.f6413e6a.chunk.js": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js",
     "static/js/2.f6413e6a.chunk.js.map": "/Nursery-Demo-React/static/js/2.f6413e6a.chunk.js.map",
     "index.html": "/Nursery-Demo-React/index.html",
-    "precache-manifest.b57e93d6f8c5cc0922110f4a9959be5f.js": "/Nursery-Demo-React/precache-manifest.b57e93d6f8c5cc0922110f4a9959be5f.js",
+    "precache-manifest.b9f7d2c4affe854449ed4c5c71becf96.js": "/Nursery-Demo-React/precache-manifest.b9f7d2c4affe854449ed4c5c71becf96.js",
     "service-worker.js": "/Nursery-Demo-React/service-worker.js",
     "static/css/2.8b9254be.chunk.css.map": "/Nursery-Demo-React/static/css/2.8b9254be.chunk.css.map",
     "static/css/main.ce27810f.chunk.css.map": "/Nursery-Demo-React/static/css/main.ce27810f.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.8b9254be.chunk.css",
     "static/js/2.f6413e6a.chunk.js",
     "static/css/main.ce27810f.chunk.css",
-    "static/js/main.2479cc4d.chunk.js"
+    "static/js/main.50d4f758.chunk.js"
   ]
 }
